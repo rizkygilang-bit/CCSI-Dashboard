@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>FWA CCSI - SURGE Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Tahoma,sans-serif; -webkit-tap-highlight-color:transparent; }
+  body { background:#f5f7fa; color:#1a202c; padding:14px; min-height:100vh; overflow-x:hidden; }
+
+  .header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px; flex-wrap:wrap; gap:12px; background:#fff; padding:16px 18px; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+  .header h1 { font-size:20px; letter-spacing:.3px; color:#1a202c; font-weight:800; }
+  .header h2 { font-size:10px; color:#2563eb; font-weight:600; margin-top:3px; letter-spacing:.8px; }
+  .scope { text-align:right; }
+  .scope .label { font-size:9px; color:#718096; letter-spacing:1.2px; font-weight:700; }
+  .scope .value { font-size:28px; font-weight:800; color:#1a202c; line-height:1.1; }
+  .scope .value span { font-size:12px; color:#2563eb; font-weight:600; }
+
+  .toolbar { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; align-items:center; }
+  .btn { background:#fff; border:1px solid #e2e8f0; color:#2563eb; padding:10px 14px; border-radius:8px; cursor:pointer; font-size:11px; font-weight:600; transition:all .2s; box-shadow:0 1px 2px rgba(0,0,0,.04); -webkit-appearance:none; }
+  .btn:active { background:#f1f5f9; transform:scale(.97); }
+  .btn.primary { background:#2563eb; color:#fff; border-color:#2563eb; }
+  .btn:disabled { opacity:.6; cursor:not-allowed; }
+  .status-badge { font-size:10px; padding:5px 10px; border-radius:10px; font-weight:700; }
+  .status-badge.ok { background:#dcfce7; color:#15803d; }
+  .status-badge.warn { background:#fef3c7; color:#b45309; }
+  .status-badge.err { background:#fee2e2; color:#b91c1c; }
+  .status-badge.loading { background:#dbeafe; color:#1d4ed8; }
+
+  .kpi-row { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-bottom:14px; }
+  .kpi { background:#fff; border-radius:10px; padding:12px; display:flex; gap:10px; align-items:center; border:1px solid #e2e8f0; box-shadow:0 1px 3px rgba(0,0,0,.04); position:relative; overflow:hidden; }
+  .kpi .icon { width:38px; height:38px; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+  .kpi .info .label { font-size:9px; color:#718096; letter-spacing:.8px; font-weight:700; }
+  .kpi .info .num { font-size:20px; font-weight:800; line-height:1.1; color:#1a202c; }
+  .kpi .info .pct { font-size:10px; color:#2563eb; font-weight:600; }
+  .kpi.total { grid-column:1 / -1; }
+
+  .main-grid { display:grid; grid-template-columns:1fr; gap:14px; margin-bottom:14px; }
+  .card { background:#fff; border-radius:12px; padding:14px; border:1px solid #e2e8f0; box-shadow:0 1px 3px rgba(0,0,0,.04); }
+  .card h3 { font-size:13px; margin-bottom:12px; color:#1a202c; display:flex; align-items:center; gap:6px; font-weight:700; padding-bottom:10px; border-bottom:2px solid #f1f5f9; }
+
+  /* FIX UTAMA — CHART WRAPPER */
+  .chart-wrap { position:relative; width:100%; height:240px; min-height:240px; }
+  .chart-wrap.tall { height:320px; min-height:320px; }
+  .chart-wrap.medium { height:260px; min-height:260px; }
+  .chart-wrap canvas { display:block !important; width:100% !important; height:100% !important; }
+
+  .legend { font-size:11px; margin-top:10px; max-height:200px; overflow-y:auto; }
+  .legend div { display:flex; justify-content:space-between; padding:5px 0; border-bottom:1px solid #f1f5f9; }
+  .legend div:last-child { border-bottom:none; }
+  .legend .dot { display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:middle; }
+  .legend .val { color:#2563eb; font-weight:700; font-size:10px; }
+
+  .focus-item { background:#f8fafc; border-radius:8px; padding:12px 14px; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center; border-left:4px solid #2563eb; }
+  .focus-item .txt { font-size:12px; font-weight:700; color:#1a202c; }
+  .focus-item .sub { font-size:9px; color:#718096; margin-top:2px; }
+  .focus-item .val { font-size:20px; font-weight:800; color:#2563eb; }
+
+  .secondary-grid { display:grid; grid-template-columns:1fr; gap:14px; margin-bottom:14px; }
+
+  .footer { margin-top:16px; text-align:right; font-size:10px; color:#718096; background:#fff; padding:14px 16px; border-radius:12px; border:1px solid #e2e8f0; }
+  .footer .mgr { color:#1a202c; font-size:13px; font-weight:700; margin-top:4px; }
+
+  /* TOAST */
+  .toast {
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%) translateY(-20px);
+    background:#fff;
+    border:2px solid #2563eb;
+    padding:14px 20px;
+    border-radius:12px;
+    font-size:13px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    opacity:0;
+    transition:all .3s ease;
+    z-index:99999;
+    max-width:92vw;
+    min-width:260px;
+    color:#1a202c;
+    font-weight:700;
+    text-align:center;
+    pointer-events:none;
+  }
+  .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+  .toast.ok { border-color:#16a34a; background:#f0fdf4; color:#15803d; }
+  .toast.err { border-color:#dc2626; background:#fef2f2; color:#b91c1c; }
+  .toast.info { border-color:#2563eb; background:#eff6ff; color:#1d4ed8; }
+
+  .loading-overlay {
+    position:fixed;
+    top:0; left:0; right:0; bottom:0;
+    background:rgba(15,23,42,.5);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:99998;
+    backdrop-filter:blur(2px);
+  }
+  .loading-overlay.show { display:flex; }
+  .loading-box {
+    background:#fff;
+    padding:24px 32px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+  }
+  .loading-spinner {
+    width:40px; height:40px;
+    border:4px solid #e2e8f0;
+    border-top-color:#2563eb;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:0 auto 12px;
+  }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .loading-text { font-size:13px; font-weight:600; color:#1a202c; }
+  .loading-sub { font-size:11px; color:#718096; margin-top:4px; }
+
+  @media (min-width: 600px) {
+    body { padding:18px; }
+    .header h1 { font-size:22px; }
+    .kpi-row { grid-template-columns:repeat(3,1fr); }
+    .kpi.total { grid-column:auto; }
+    .chart-wrap { height:280px; min-height:280px; }
+    .chart-wrap.tall { height:380px; min-height:380px; }
+    .chart-wrap.medium { height:300px; min-height:300px; }
+    .secondary-grid { grid-template-columns:1fr 1fr; }
+    .toast { min-width:340px; }
+  }
+
+  @media (min-width: 1024px) {
+    body { padding:20px; }
+    .header { padding:20px 24px; margin-bottom:20px; }
+    .header h1 { font-size:26px; }
+    .header h2 { font-size:12px; }
+    .scope .value { font-size:36px; }
+    .scope .value span { font-size:14px; }
+    .kpi-row { grid-template-columns:repeat(5,1fr); gap:14px; }
+    .kpi { padding:18px; }
+    .kpi .icon { width:48px; height:48px; font-size:22px; }
+    .kpi .info .num { font-size:28px; }
+    .main-grid { grid-template-columns:1fr 1.4fr 1fr; gap:16px; }
+    .card { padding:20px; }
+    .chart-wrap { height:240px; min-height:240px; }
+    .chart-wrap.tall { height:360px; min-height:360px; }
+    .chart-wrap.medium { height:280px; min-height:280px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>FWA CCSI - SURGE</h1>
+    <h2>PROJECT PERFORMANCE DASHBOARD | EXECUTIVE VIEW</h2>
+  </div>
+  <div class="scope">
+    <div class="label">AS OF: <span id="dateNow"></span></div>
+    <div class="label">TOTAL SCOPE</div>
+    <div class="value"><span id="totalScope">-</span> <span>SITES</span></div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <button class="btn primary" id="btnUpdate" onclick="updateFromSheets()">🔄 Update</button>
+  <button class="btn" onclick="downloadData()">📥 Download</button>
+  <button class="btn" onclick="resetToDefault()">↺ Reset</button>
+  <span id="dataSource" class="status-badge warn">📊 Default</span>
+</div>
+
+<div class="kpi-row" id="kpiRow"></div>
+
+<div class="main-grid">
+  <div class="card">
+    <h3>📊 Overall Site Distribution</h3>
+    <div class="chart-wrap"><canvas id="donutChart"></canvas></div>
+    <div class="legend" id="legend"></div>
+  </div>
+  <div class="card">
+    <h3>📈 Project Status by Site</h3>
+    <div class="chart-wrap tall"><canvas id="barChart"></canvas></div>
+  </div>
+  <div class="card">
+    <h3>🎯 Management Focus</h3>
+    <div id="focusList"></div>
+  </div>
+</div>
+
+<div class="secondary-grid">
+  <div class="card">
+    <h3>⭐ Site Priority</h3>
+    <div class="chart-wrap medium"><canvas id="priorityChart"></canvas></div>
+  </div>
+  <div class="card">
+    <h3>📋 Permit Status</h3>
+    <div class="chart-wrap medium"><canvas id="permitChart"></canvas></div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>Source: <span id="sourceText">Default Data</span> | <span id="footerTotal">-</span> Sites | Last update: <span id="lastUpdate">-</span></div>
+  <div style="margin-top:6px;">CCSI PROJECT MANAGEMENT</div>
+  <div class="mgr">Property Rizky Gilang Purwanto</div>
+  <div>CCSI Project Control</div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<div id="loadingOverlay" class="loading-overlay">
+  <div class="loading-box">
+    <div class="loading-spinner"></div>
+    <div class="loading-text" id="loadingText">Mengambil data dari Google Sheets...</div>
+    <div class="loading-sub" id="loadingSub">Mencoba proxy 1/5</div>
+  </div>
+</div>
+
+<script>
+// =========================================================
+// CHART.JS GLOBAL CONFIG
+// =========================================================
+Chart.defaults.devicePixelRatio = window.devicePixelRatio || 2;
+Chart.defaults.responsive = true;
+Chart.defaults.maintainAspectRatio = false;
+Chart.defaults.animation.duration = 500;
+
+// =========================================================
+// DATA DEFAULT
+// =========================================================
+const DEFAULT_DATA = {
+  status: [
+    { label:'Permit',          value:366 },
+    { label:'RFS',             value:259 },
+    { label:'Terminasi Done',  value:186 },
+    { label:'CCSI Takeout',    value:173 },
+    { label:'DROP',            value:53 },
+    { label:'Pulling Done',    value:51 },
+    { label:'DRM',             value:26 },
+    { label:'Pulling Cable',   value:13 }
+  ],
+  priority: [
+    { label:'P1', value:11 },
+    { label:'P2', value:40 },
+    { label:'P3', value:223 }
+  ],
+  permit: [
+    { label:'Permit Lingkungan Done', value:140 },
+    { label:'Permit NY Start',        value:50 },
+    { label:'Permit Ongoing',         value:30 },
+    { label:'Submit PU',              value:20 },
+    { label:'Community Rejected',     value:5 }
+  ]
+};
+
+const SHEET_PUB_BASE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsM2W-ixiIhBq4PTUfpbiY3DFzeMTDaHmxUvMfUDCn16d3s4NOLemY4JAbcA6FmgjdoUgGJy_7N-er/pub";
+const SHEET_CSV_URL = SHEET_PUB_BASE + "?gid=237145103&single=true&output=csv";
+
+const PROXY_LIST = [
+  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+  url => `https://cors.eu.org/${url}`,
+  url => `https://thingproxy.freeboard.io/fetch/${url}`,
+  url => url
+];
+
+let currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+let dataSource = 'default';
+
+const COLORS = ['#2563eb','#16a34a','#ea580c','#9333ea','#0891b2','#db2777','#ca8a04','#0284c7'];
+
+document.getElementById('dateNow').textContent =
+  new Date().toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase();
+
+// =========================================================
+// TOAST
+// =========================================================
+let toastTimer;
+function showToast(msg, type='info'){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + type;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 6000);
+  console.log(`[TOAST ${type.toUpperCase()}]`, msg);
+}
+
+function showLoading(text, sub){
+  document.getElementById('loadingText').textContent = text || 'Memuat...';
+  document.getElementById('loadingSub').textContent = sub || '';
+  document.getElementById('loadingOverlay').classList.add('show');
+}
+function hideLoading(){
+  document.getElementById('loadingOverlay').classList.remove('show');
+}
+
+// =========================================================
+// FIX HP: Tunggu canvas punya ukuran real
+// =========================================================
+function waitForCanvasSize(canvasEl, maxAttempts = 20){
+  return new Promise((resolve) => {
+    let attempts = 0;
+
+    function check(){
+      attempts++;
+      const rect = canvasEl.getBoundingClientRect();
+      const parent = canvasEl.parentElement;
+      const parentRect = parent ? parent.getBoundingClientRect() : null;
+
+      if(rect.width > 50 && rect.height > 50){
+        console.log(`✅ Canvas siap (${Math.round(rect.width)}x${Math.round(rect.height)}) setelah ${attempts} kali cek`);
+        resolve(rect);
+        return;
+      }
+
+      if(attempts >= maxAttempts){
+        console.warn(`⚠️ Canvas size timeout — paksa set ukuran`);
+        // Force parent punya ukuran
+        if(parent && parentRect && parentRect.height < 50){
+          parent.style.height = '240px';
+          parent.style.minHeight = '240px';
+        }
+        resolve({ width: parentRect?.width || 300, height: 240 });
+        return;
+      }
+
+      // Coba lagi di frame berikutnya
+      requestAnimationFrame(() => setTimeout(check, 50));
+    }
+
+    // Mulai cek
+    requestAnimationFrame(check);
+  });
+}
+
+// =========================================================
+// RENDER
+// =========================================================
+let charts = [];
+function destroyCharts(){
+  charts.forEach(c => { try { c.destroy(); } catch(e){} });
+  charts = [];
+}
+
+async function renderDashboard(){
+  destroyCharts();
+
+  const statusData = [...currentData.status].sort((a,b) => b.value - a.value);
+  const TOTAL = statusData.reduce((s,d) => s + d.value, 0);
+
+  const statusWithPct = statusData.map((d,i) => ({
+    ...d,
+    color: COLORS[i % COLORS.length],
+    pct: TOTAL > 0 ? ((d.value/TOTAL)*100).toFixed(1) : '0.0'
+  }));
+
+  document.getElementById('totalScope').textContent = TOTAL.toLocaleString('id-ID');
+  document.getElementById('footerTotal').textContent = TOTAL.toLocaleString('id-ID');
+  document.getElementById('lastUpdate').textContent = new Date().toLocaleString('id-ID');
+
+  const badge = document.getElementById('dataSource');
+  if(dataSource === 'sheets'){
+    badge.className = 'status-badge ok';
+    badge.textContent = '📡 Live';
+    document.getElementById('sourceText').textContent = 'Google Sheets (Live)';
+  } else {
+    badge.className = 'status-badge warn';
+    badge.textContent = '📊 Default';
+    document.getElementById('sourceText').textContent = 'Default Data';
+  }
+
+  const findVal = (name) => {
+    const item = statusWithPct.find(d => d.label.toLowerCase() === name.toLowerCase());
+    return item ? item.value : 0;
+  };
+
+  const KPI_LIST = [
+    { label:'TOTAL SITES',    value:TOTAL,                     color:'#2563eb', icon:'📍', pct:'100% SCOPE', isTotal:true },
+    { label:'PERMIT',         value:findVal('permit'),         color:'#ea580c', icon:'📄', pct:null },
+    { label:'RFS',            value:findVal('rfs'),            color:'#16a34a', icon:'✅', pct:null },
+    { label:'TERMINASI DONE', value:findVal('terminasi done'), color:'#9333ea', icon:'🔌', pct:null },
+    { label:'PULLING DONE',   value:findVal('pulling done'),   color:'#0891b2', icon:'🔧', pct:null }
+  ];
+
+  document.getElementById('kpiRow').innerHTML = KPI_LIST.map(k => {
+    const pct = k.pct || ((k.value/TOTAL)*100).toFixed(1)+'% OF TOTAL';
+    return `
+    <div class="kpi ${k.isTotal ? 'total' : ''}">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:4px;background:${k.color};border-radius:10px 0 0 10px;"></div>
+      <div class="icon" style="background:${k.color}15;color:${k.color}">${k.icon}</div>
+      <div class="info">
+        <div class="label">${k.label}</div>
+        <div class="num">${k.value.toLocaleString('id-ID')}</div>
+        <div class="pct">${pct}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Tunggu DOM update dulu
+  await new Promise(r => requestAnimationFrame(r));
+  await new Promise(r => setTimeout(r, 100));
+
+  // Render chart setelah canvas punya ukuran
+  await renderCharts(statusWithPct, TOTAL);
+}
+
+async function renderCharts(statusWithPct, TOTAL){
+  console.log('🚀 Mulai render charts...');
+
+  // === DONUT ===
+  const donutEl = document.getElementById('donutChart');
+  if(donutEl){
+    await waitForCanvasSize(donutEl);
+    try {
+      charts.push(new Chart(donutEl, {
+        type:'doughnut',
+        data:{
+          labels: statusWithPct.map(d=>d.label),
+          datasets:[{
+            data: statusWithPct.map(d=>d.value),
+            backgroundColor: statusWithPct.map(d=>d.color),
+            borderWidth:3, borderColor:'#fff'
+          }]
+        },
+        options:{
+          cutout:'65%', responsive:true, maintainAspectRatio:false,
+          plugins:{
+            legend:{ display:false },
+            tooltip:{ callbacks:{ label: ctx => `${ctx.label}: ${ctx.parsed} (${((ctx.parsed/TOTAL)*100).toFixed(1)}%)` } }
+          }
+        }
+      }));
+      console.log('✅ Donut chart OK');
+    } catch(e){
+      console.error('❌ Donut error:', e);
+    }
+  }
+
+  document.getElementById('legend').innerHTML = statusWithPct.map(d=>`
+    <div>
+      <span><span class="dot" style="background:${d.color}"></span>${d.label}</span>
+      <span class="val">${d.value} &nbsp; ${d.pct}%</span>
+    </div>`).join('');
+
+  // === BAR ===
+  const barEl = document.getElementById('barChart');
+  if(barEl){
+    await waitForCanvasSize(barEl);
+    try {
+      charts.push(new Chart(barEl, {
+        type:'bar',
+        data:{
+          labels: statusWithPct.map(d=>d.label),
+          datasets:[{
+            data: statusWithPct.map(d=>d.value),
+            backgroundColor: statusWithPct.map(d=>d.color),
+            borderRadius:6,
+            barThickness: window.innerWidth < 600 ? 20 : 28
+          }]
+        },
+        options:{
+          indexAxis:'y', responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false} },
+          scales:{
+            x:{ ticks:{color:'#718096', font:{size:10}}, grid:{color:'#f1f5f9'} },
+            y:{ ticks:{color:'#1a202c', font:{size:10, weight:'600'}}, grid:{display:false} }
+          }
+        }
+      }));
+      console.log('✅ Bar chart OK');
+    } catch(e){
+      console.error('❌ Bar error:', e);
+    }
+  }
+
+  // === FOCUS ===
+  const findVal = (name) => {
+    const item = statusWithPct.find(d => d.label.toLowerCase() === name.toLowerCase());
+    return item ? item.value : 0;
+  };
+
+  const FOCUS_LIST = [
+    { t:'Permit Progress', s:'Ongoing & submitted',    v: findVal('permit') },
+    { t:'RFS Achievement', s:'Site ready for service', v: findVal('rfs') },
+    { t:'Terminasi Done',  s:'Completed termination',  v: findVal('terminasi done') },
+    { t:'CCSI Takeout',    s:'Site takeout',           v: findVal('ccsi takeout') }
+  ];
+
+  document.getElementById('focusList').innerHTML = FOCUS_LIST.map(f=>`
+    <div class="focus-item">
+      <div>
+        <div class="txt">${f.t}</div>
+        <div class="sub">${f.s}</div>
+      </div>
+      <div class="val">${f.v.toLocaleString('id-ID')}</div>
+    </div>`).join('');
+
+  // === PRIORITY ===
+  const priorityEl = document.getElementById('priorityChart');
+  if(priorityEl && currentData.priority && currentData.priority.length){
+    await waitForCanvasSize(priorityEl);
+    try {
+      charts.push(new Chart(priorityEl, {
+        type:'doughnut',
+        data:{
+          labels: currentData.priority.map(d=>d.label),
+          datasets:[{
+            data: currentData.priority.map(d=>d.value),
+            backgroundColor: ['#16a34a','#2563eb','#ea580c','#9333ea','#db2777'],
+            borderWidth:3, borderColor:'#fff'
+          }]
+        },
+        options:{
+          cutout:'60%', responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{ position:'bottom', labels:{ color:'#4a5568', font:{size:10, weight:'600'}, padding:10, usePointStyle:true, boxWidth:8 } } }
+        }
+      }));
+      console.log('✅ Priority chart OK');
+    } catch(e){
+      console.error('❌ Priority error:', e);
+    }
+  }
+
+  // === PERMIT ===
+  const permitEl = document.getElementById('permitChart');
+  if(permitEl && currentData.permit && currentData.permit.length){
+    await waitForCanvasSize(permitEl);
+    try {
+      const permitSorted = [...currentData.permit].sort((a,b) => b.value - a.value);
+      charts.push(new Chart(permitEl, {
+        type:'bar',
+        data:{
+          labels: permitSorted.map(d=>d.label),
+          datasets:[{
+            data: permitSorted.map(d=>d.value),
+            backgroundColor:'#ea580c',
+            borderRadius:6,
+            barThickness: window.innerWidth < 600 ? 14 : 18
+          }]
+        },
+        options:{
+          indexAxis:'y', responsive:true, maintainAspectRatio:false,
+          plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label: ctx => `${ctx.parsed.x} sites` } } },
+          scales:{
+            x:{ ticks:{color:'#718096', font:{size:9}}, grid:{color:'#f1f5f9'} },
+            y:{ ticks:{color:'#1a202c', font:{size:9, weight:'600'}}, grid:{display:false} }
+          }
+        }
+      }));
+      console.log('✅ Permit chart OK');
+    } catch(e){
+      console.error('❌ Permit error:', e);
+    }
+  }
+
+  console.log(`🎉 Semua chart selesai! Total: ${charts.length} chart`);
+}
+
+// =========================================================
+// AUTO RESIZE
+// =========================================================
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    charts.forEach(c => { try { c.resize(); } catch(e){} });
+  }, 200);
+});
+window.addEventListener('orientationchange', () => {
+  setTimeout(() => { charts.forEach(c => { try { c.resize(); } catch(e){} }); }, 400);
+});
+
+// =========================================================
+// FETCH CSV via PROXY dengan FALLBACK + TIMEOUT
+// =========================================================
+function fetchCSVWithFallback(url){
+  return new Promise((resolve, reject) => {
+    let attempt = 0;
+    const maxAttempts = PROXY_LIST.length;
+
+    function tryNext(){
+      if(attempt >= maxAttempts){
+        reject(new Error('Semua proxy gagal. Cek koneksi internet.'));
+        return;
+      }
+
+      const proxyFn = PROXY_LIST[attempt];
+      const proxiedUrl = proxyFn(url);
+      const attemptNo = attempt + 1;
+
+      console.log(`[Proxy ${attemptNo}/${maxAttempts}] Coba...`);
+      showLoading(`Mengambil data... (proxy ${attemptNo}/${maxAttempts})`, 'Mohon tunggu');
+
+      let timeoutId = setTimeout(() => {
+        console.warn(`⏱ Proxy ${attemptNo} timeout, coba berikutnya...`);
+        attempt++;
+        tryNext();
+      }, 15000);
+
+      Papa.parse(proxiedUrl, {
+        download: true,
+        header: false,
+        skipEmptyLines: true,
+        complete: r => {
+          clearTimeout(timeoutId);
+          if(r.data && r.data.length > 0){
+            console.log(`✅ Berhasil via proxy ${attemptNo}! Total baris:`, r.data.length);
+            resolve(r.data);
+          } else {
+            console.warn(`⚠️ Proxy ${attemptNo} data kosong, coba berikutnya...`);
+            attempt++;
+            tryNext();
+          }
+        },
+        error: err => {
+          clearTimeout(timeoutId);
+          console.warn(`❌ Proxy ${attemptNo} gagal:`, err.message || err);
+          attempt++;
+          tryNext();
+        }
+      });
+    }
+
+    tryNext();
+  });
+}
+
+// =========================================================
+// UPDATE DARI SHEETS
+// =========================================================
+async function updateFromSheets(){
+  const btn = document.getElementById('btnUpdate');
+  btn.disabled = true;
+  btn.textContent = '⏳ Loading...';
+
+  const badge = document.getElementById('dataSource');
+  badge.className = 'status-badge loading';
+  badge.textContent = '⏳ Loading...';
+
+  showToast('⏳ Mengambil data dari Google Sheets...', 'info');
+
+  try {
+    const rows = await fetchCSVWithFallback(SHEET_CSV_URL);
+    const parsed = parseSiteList(rows);
+
+    if(parsed.status.length === 0){
+      throw new Error('Data status tidak ditemukan.');
+    }
+
+    currentData = parsed;
+    dataSource = 'sheets';
+    await renderDashboard();
+
+    const total = parsed.status.reduce((s,d)=>s+d.value,0);
+    showToast(`✅ Berhasil! Total ${total.toLocaleString('id-ID')} sites.`, 'ok');
+
+  } catch(err){
+    console.error('Error:', err);
+    showToast(`❌ Gagal: ${err.message || 'Tidak bisa ambil data'}`, 'err');
+    dataSource = 'default';
+    await renderDashboard();
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🔄 Update';
+    hideLoading();
+  }
+}
+
+// =========================================================
+// PARSER
+// =========================================================
+function parseSiteList(rows){
+  const KEYWORDS = ['site id', 'progress fo', 'site priority', 'permit status', 'status', 'vendor'];
+  let headerIdx = -1, bestScore = 0;
+
+  for(let i = 0; i < Math.min(rows.length, 20); i++){
+    const row = rows[i] || [];
+    let score = 0;
+    for(const cell of row){
+      const c = (cell||'').toString().trim().toLowerCase();
+      if(KEYWORDS.some(k => c === k || c.includes(k))) score++;
+    }
+    if(score > bestScore){ bestScore = score; headerIdx = i; }
+  }
+
+  if(headerIdx === -1 || bestScore === 0){
+    throw new Error('Baris header tidak ditemukan.');
+  }
+
+  const header = rows[headerIdx];
+  let progressFOIdx = -1, sitePriorityIdx = -1, permitStatusIdx = -1;
+
+  for(let i = 0; i < header.length; i++){
+    const h = (header[i]||'').toString().trim().toLowerCase();
+    if(h === 'progress fo' || h.includes('progress fo')) progressFOIdx = i;
+    if(h === 'site priority' || h.includes('site priority') || h.includes('priority')) sitePriorityIdx = i;
+    if(h === 'permit status' || h.includes('permit status')) permitStatusIdx = i;
+  }
+
+  if(progressFOIdx === -1){
+    for(let col = 0; col < (header.length||50); col++){
+      let hits = 0;
+      for(let r = headerIdx+1; r < Math.min(rows.length, headerIdx+50); r++){
+        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
+        if(v.includes('rfs') || v.includes('drm') || v.includes('permit') || v.includes('terminasi') || v.includes('pulling') || v.includes('takeout') || v.includes('drop')) hits++;
+      }
+      if(hits > 10){ progressFOIdx = col; break; }
+    }
+  }
+
+  if(permitStatusIdx === -1){
+    for(let col = 0; col < (header.length||50); col++){
+      let hits = 0;
+      for(let r = headerIdx+1; r < Math.min(rows.length, headerIdx+50); r++){
+        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
+        if(v.includes('permit') && !v.includes('progress')) hits++;
+      }
+      if(hits > 10){ permitStatusIdx = col; break; }
+    }
+  }
+
+  if(progressFOIdx === -1){
+    throw new Error('Kolom "Progress FO" tidak ditemukan.');
+  }
+
+  const statusCount = {}, priorityCount = {}, permitCount = {};
+
+  for(let i = headerIdx + 1; i < rows.length; i++){
+    const r = rows[i];
+    if(!r || r.length === 0) continue;
+
+    const progress = (r[progressFOIdx]||'').toString().trim();
+    if(progress && !progress.startsWith('#') && !progress.toLowerCase().includes('n/a')){
+      let label = progress.replace(/^\d+\.\s*/, '').replace(/\s+/g, ' ').trim();
+      label = label.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+      label = label.replace(/Rfs/g, 'RFS').replace(/Drm/g, 'DRM');
+      statusCount[label] = (statusCount[label]||0) + 1;
+    }
+
+    if(sitePriorityIdx !== -1){
+      const prio = (r[sitePriorityIdx]||'').toString().trim();
+      if(prio && !prio.startsWith('#') && prio.length < 10){
+        priorityCount[prio] = (priorityCount[prio]||0) + 1;
+      }
+    }
+
+    if(permitStatusIdx !== -1){
+      const permit = (r[permitStatusIdx]||'').toString().trim();
+      if(permit && !permit.startsWith('#') && !permit.toLowerCase().includes('n/a')){
+        permitCount[permit] = (permitCount[permit]||0) + 1;
+      }
+    }
+  }
+
+  const status = Object.keys(statusCount).map(k => ({ label: k, value: statusCount[k] }));
+  const priority = Object.keys(priorityCount).map(k => ({ label: k, value: priorityCount[k] })).sort((a,b)=>b.value-a.value);
+  const permit = Object.keys(permitCount).map(k => ({ label: k, value: permitCount[k] })).sort((a,b)=>b.value-a.value);
+
+  return { status, priority, permit };
+}
+
+function resetToDefault(){
+  currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+  dataSource = 'default';
+  renderDashboard();
+  showToast('↺ Data dikembalikan ke default.', 'info');
+}
+
+function downloadData(){
+  let csv = 'Kategori,Label,Value\n';
+  currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
+  currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
+  if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
+
+  const blob = new Blob([csv], { type:'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'ccsi-sitelist-' + new Date().toISOString().slice(0,10) + '.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('📥 Data berhasil didownload.', 'info');
+}
+
+// =========================================================
+// INIT
+// =========================================================
+window.addEventListener('load', async () => {
+  await new Promise(r => setTimeout(r, 300));  // Tunggu layout settle
+  await renderDashboard();
+  showToast('📊 Dashboard siap. Klik "🔄 Update" untuk live data.', 'info');
+});
+</script>
+</body>
+</html>
