@@ -212,7 +212,7 @@
   <div class="loading-box">
     <div class="loading-spinner"></div>
     <div class="loading-text" id="loadingText">Mengambil data dari Google Sheets...</div>
-    <div class="loading-sub" id="loadingSub">Mencoba proxy 1/4</div>
+    <div class="loading-sub" id="loadingSub">Mohon tunggu</div>
   </div>
 </div>
 
@@ -253,19 +253,16 @@ const DEFAULT_DATA = {
   ]
 };
 
-const SHEET_PUB_BASE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsM2W-ixiIhBq4PTUfpbiY3DFzeMTDaHmxUvMfUDCn16d3s4NOLemY4JAbcA6FmgjdoUgGJy_7N-er/pub";
-const SHEET_CSV_URL = SHEET_PUB_BASE + "?gid=237145103&single=true&output=csv";
+// =========================================================
+// URL APPS SCRIPT (GANTI INI KALAU DEPLOY ULANG)
+// =========================================================
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhIEFUL0W75JexTeYXSeQTUQhqST34XIo7mKeLjefV654mf_8LzxtE0xJIRY8u7430/exec";
+const SHEET_GID = "573014540"; // GID tab "All CCSI Sitelist"
+const SHEET_CSV_URL = APPS_SCRIPT_URL + "?gid=" + SHEET_GID;
 
-// =========================================================
-// PROXY LIST — DIRECT ACCESS UTAMA
-// =========================================================
+// PROXY LIST — Apps Script sudah handle CORS, jadi cuma 1
 const PROXY_LIST = [
-  // 1. DIRECT ACCESS — prioritas utama untuk GitHub Pages (HTTPS)
-  url => url,
-  // 2. Fallback proxy
-  url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
-  url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`,
-  url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+  url => url
 ];
 
 let currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
@@ -299,7 +296,7 @@ function hideLoading(){
 }
 
 // =========================================================
-// WAIT FOR CANVAS SIZE (mobile fix)
+// WAIT FOR CANVAS SIZE
 // =========================================================
 function waitForCanvasSize(canvasEl, maxAttempts = 20){
   return new Promise((resolve) => {
@@ -510,7 +507,7 @@ window.addEventListener('orientationchange', () => {
 });
 
 // =========================================================
-// FETCH CSV via FETCH NATIVE (lebih andal dari PapaParse download)
+// FETCH CSV via APPS SCRIPT
 // =========================================================
 async function fetchCSVWithFallback(url){
   const maxAttempts = PROXY_LIST.length;
@@ -519,19 +516,17 @@ async function fetchCSVWithFallback(url){
     const proxyFn = PROXY_LIST[attempt];
     const proxiedUrl = proxyFn(url);
     const attemptNo = attempt + 1;
-    const isDirect = attempt === 0;
 
-    console.log(`[Proxy ${attemptNo}/${maxAttempts}] ${isDirect ? 'DIRECT' : 'proxy'}:`, proxiedUrl.slice(0, 100));
-    showLoading(`Mengambil data... (${attemptNo}/${maxAttempts})`, isDirect ? 'Direct access' : 'Via proxy');
+    console.log(`[Attempt ${attemptNo}/${maxAttempts}] URL:`, proxiedUrl);
+    showLoading(`Mengambil data... (${attemptNo}/${maxAttempts})`, 'Mohon tunggu');
 
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 12000);
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
 
       const response = await fetch(proxiedUrl, {
         method: 'GET',
-        signal: controller.signal,
-        headers: { 'Accept': 'text/csv, text/plain, */*' }
+        signal: controller.signal
       });
 
       clearTimeout(timeoutId);
@@ -550,7 +545,7 @@ async function fetchCSVWithFallback(url){
         throw new Error('Response berupa HTML (bukan CSV)');
       }
 
-      console.log(`✅ Berhasil via ${isDirect ? 'DIRECT' : 'proxy ' + attemptNo}! Panjang: ${text.length} chars`);
+      console.log(`✅ Berhasil! Panjang: ${text.length} chars`);
 
       const result = Papa.parse(text, {
         header: false,
@@ -565,11 +560,11 @@ async function fetchCSVWithFallback(url){
       return result.data;
 
     } catch(err){
-      console.warn(`❌ ${isDirect ? 'DIRECT' : 'Proxy ' + attemptNo} gagal:`, err.message);
+      console.warn(`❌ Attempt ${attemptNo} gagal:`, err.message);
     }
   }
 
-  throw new Error('Semua proxy gagal. Cek koneksi internet atau publish ulang Google Sheets.');
+  throw new Error('Gagal ambil data dari Apps Script.');
 }
 
 // =========================================================
@@ -687,56 +682,4 @@ function parseSiteList(rows){
     if(sitePriorityIdx !== -1){
       const prio = (r[sitePriorityIdx]||'').toString().trim();
       if(prio && !prio.startsWith('#') && prio.length < 10){
-        priorityCount[prio] = (priorityCount[prio]||0) + 1;
-      }
-    }
-
-    if(permitStatusIdx !== -1){
-      const permit = (r[permitStatusIdx]||'').toString().trim();
-      if(permit && !permit.startsWith('#') && !permit.toLowerCase().includes('n/a')){
-        permitCount[permit] = (permitCount[permit]||0) + 1;
-      }
-    }
-  }
-
-  const status = Object.keys(statusCount).map(k => ({ label: k, value: statusCount[k] }));
-  const priority = Object.keys(priorityCount).map(k => ({ label: k, value: priorityCount[k] })).sort((a,b)=>b.value-a.value);
-  const permit = Object.keys(permitCount).map(k => ({ label: k, value: permitCount[k] })).sort((a,b)=>b.value-a.value);
-
-  return { status, priority, permit };
-}
-
-function resetToDefault(){
-  currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
-  dataSource = 'default';
-  renderDashboard();
-  showToast('↺ Data dikembalikan ke default.', 'info');
-}
-
-function downloadData(){
-  let csv = 'Kategori,Label,Value\n';
-  currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
-  currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
-  if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
-
-  const blob = new Blob([csv], { type:'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'ccsi-sitelist-' + new Date().toISOString().slice(0,10) + '.csv';
-  a.click();
-  URL.revokeObjectURL(url);
-  showToast('📥 Data berhasil didownload.', 'info');
-}
-
-// =========================================================
-// INIT
-// =========================================================
-window.addEventListener('load', async () => {
-  await new Promise(r => setTimeout(r, 300));
-  await renderDashboard();
-  showToast('📊 Dashboard siap. Klik "🔄 Update" untuk live data.', 'info');
-});
-</script>
-</body>
-</html>
+        priorityCount[prio] = (priority
