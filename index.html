@@ -259,13 +259,13 @@ const SHEET_PUB_BASE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsM2W-i
 const SHEET_CSV_URL = SHEET_PUB_BASE + "?gid=237145103&single=true&output=csv";
 
 const PROXY_LIST = [
-  // Direct access (untuk GitHub Pages HTTPS)
+  // 1. Direct access (untuk GitHub Pages — paling cepat & stabil)
   url => url,
-  // Fallback proxies
+  // 2. Fallback proxy
   url => `https://corsproxy.io/?${encodeURIComponent(url)}`,
   url => `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(url)}`
 ];
-
+ 
 let currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
 let dataSource = 'default';
 
