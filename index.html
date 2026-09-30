@@ -592,4 +592,40 @@ function parseSiteList(rows){
     }
   }
 
-  const status = Object.keys(statusCount).map(k => ({ label: k, value:
+  const status = Object.keys(statusCount).map(k => ({ label: k, value: statusCount[k] }));
+  const priority = Object.keys(priorityCount).map(k => ({ label: k, value: priorityCount[k] })).sort((a,b)=>b.value-a.value);
+  const permit = Object.keys(permitCount).map(k => ({ label: k, value: permitCount[k] })).sort((a,b)=>b.value-a.value);
+
+  return { status, priority, permit };
+}
+
+function resetToDefault(){
+  currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+  dataSource = 'default';
+  renderDashboard();
+  showToast('↺ Data dikembalikan ke default.', 'info');
+}
+
+function downloadData(){
+  let csv = 'Kategori,Label,Value\n';
+  currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
+  currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
+  if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
+  const blob = new Blob([csv], { type:'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'ccsi-sitelist-' + new Date().toISOString().slice(0,10) + '.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('📥 Data berhasil didownload.', 'info');
+}
+
+window.addEventListener('load', async () => {
+  await new Promise(r => setTimeout(r, 300));
+  await renderDashboard();
+  showToast('📊 Dashboard siap. Klik "🔄 Update" untuk live data.', 'info');
+});
+</script>
+</body>
+</html>
