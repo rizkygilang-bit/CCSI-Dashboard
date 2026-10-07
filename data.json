@@ -1,0 +1,102 @@
+{
+  "status": [
+    {
+      "label": "Terminasi Done",
+      "value": 184
+    },
+    {
+      "label": "RFS",
+      "value": 280
+    },
+    {
+      "label": "Permit",
+      "value": 295
+    },
+    {
+      "label": "Drop",
+      "value": 116
+    },
+    {
+      "label": "Pulling Done",
+      "value": 69
+    },
+    {
+      "label": "Ccsi Takeout",
+      "value": 173
+    },
+    {
+      "label": "Pulling Cable",
+      "value": 10
+    }
+  ],
+  "priority": [
+    {
+      "label": "P1",
+      "value": 364
+    },
+    {
+      "label": "P2",
+      "value": 222
+    },
+    {
+      "label": "DROP",
+      "value": 215
+    },
+    {
+      "label": "P3",
+      "value": 151
+    },
+    {
+      "label": "P4",
+      "value": 45
+    }
+  ],
+  "permit": [
+    {
+      "label": "Permit Lingkungan done",
+      "value": 538
+    },
+    {
+      "label": "Permit NY Start",
+      "value": 220
+    },
+    {
+      "label": "Site Drop",
+      "value": 198
+    },
+    {
+      "label": "Permit Ongoing (Permit Lingkungan)",
+      "value": 111
+    },
+    {
+      "label": "Community rejected",
+      "value": 23
+    },
+    {
+      "label": "Submit PU",
+      "value": 17
+    },
+    {
+      "label": "Permit Start",
+      "value": 9
+    },
+    {
+      "label": "Permit Ongoing (Permit Lingkungan); Negotiation",
+      "value": 6
+    },
+    {
+      "label": "Permit Reject (High Donation)",
+      "value": 3
+    },
+    {
+      "label": "Permit Hold",
+      "value": 1
+    },
+    {
+      "label": "Permit Issued",
+      "value": 1
+    }
+  ],
+  "updatedAt": "2026-10-07T05:29:14.068Z",
+  "total": 1127
+}
