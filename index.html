@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>FWA CCSI - SURGE Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',Tahoma,sans-serif; -webkit-tap-highlight-color:transparent; }
   body { background:#f5f7fa; color:#1a202c; padding:14px; min-height:100vh; overflow-x:hidden; }
@@ -62,35 +61,11 @@
   .footer { margin-top:16px; text-align:right; font-size:10px; color:#718096; background:#fff; padding:14px 16px; border-radius:12px; border:1px solid #e2e8f0; }
   .footer .mgr { color:#1a202c; font-size:13px; font-weight:700; margin-top:4px; }
 
-  .toast {
-    position:fixed; top:20px; left:50%;
-    transform:translateX(-50%) translateY(-20px);
-    background:#fff; border:2px solid #2563eb;
-    padding:14px 20px; border-radius:12px; font-size:13px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
-    opacity:0; transition:all .3s ease;
-    z-index:99999; max-width:92vw; min-width:260px;
-    color:#1a202c; font-weight:700; text-align:center;
-    pointer-events:none;
-  }
+  .toast { position:fixed; top:20px; left:50%; transform:translateX(-50%) translateY(-20px); background:#fff; border:2px solid #2563eb; padding:14px 20px; border-radius:12px; font-size:13px; box-shadow:0 10px 30px rgba(0,0,0,.2); opacity:0; transition:all .3s ease; z-index:99999; max-width:92vw; min-width:260px; color:#1a202c; font-weight:700; text-align:center; pointer-events:none; }
   .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
   .toast.ok { border-color:#16a34a; background:#f0fdf4; color:#15803d; }
   .toast.err { border-color:#dc2626; background:#fef2f2; color:#b91c1c; }
   .toast.info { border-color:#2563eb; background:#eff6ff; color:#1d4ed8; }
-
-  .loading-overlay { position:fixed; top:0; left:0; right:0; bottom:0;
-    background:rgba(15,23,42,.5); display:none;
-    align-items:center; justify-content:center;
-    z-index:99998; backdrop-filter:blur(2px); }
-  .loading-overlay.show { display:flex; }
-  .loading-box { background:#fff; padding:24px 32px; border-radius:14px;
-    text-align:center; box-shadow:0 20px 40px rgba(0,0,0,.3); }
-  .loading-spinner { width:40px; height:40px;
-    border:4px solid #e2e8f0; border-top-color:#2563eb;
-    border-radius:50%; animation:spin 1s linear infinite; margin:0 auto 12px; }
-  @keyframes spin { to { transform:rotate(360deg); } }
-  .loading-text { font-size:13px; font-weight:600; color:#1a202c; }
-  .loading-sub { font-size:11px; color:#718096; margin-top:4px; }
 
   @media (min-width: 600px) {
     body { padding:18px; }
@@ -138,10 +113,9 @@
 </div>
 
 <div class="toolbar">
-  <button class="btn primary" id="btnUpdate" onclick="updateFromSheets()">🔄 Update</button>
+  <button class="btn primary" id="btnUpdate" onclick="loadData()">🔄 Refresh</button>
   <button class="btn" onclick="downloadData()">📥 Download</button>
-  <button class="btn" onclick="resetToDefault()">↺ Reset</button>
-  <span id="dataSource" class="status-badge warn">📊 Default</span>
+  <span id="dataSource" class="status-badge warn">📊 Loading...</span>
 </div>
 
 <div class="kpi-row" id="kpiRow"></div>
@@ -174,7 +148,7 @@
 </div>
 
 <div class="footer">
-  <div>Source: <span id="sourceText">Default Data</span> | <span id="footerTotal">-</span> Sites | Last update: <span id="lastUpdate">-</span></div>
+  <div>Source: <span id="sourceText">data.json</span> | <span id="footerTotal">-</span> Sites | Last update: <span id="lastUpdate">-</span></div>
   <div style="margin-top:6px;">CCSI PROJECT MANAGEMENT</div>
   <div class="mgr">Property Rizky Gilang Purwanto</div>
   <div>CCSI Project Control</div>
@@ -182,58 +156,15 @@
 
 <div id="toast" class="toast"></div>
 
-<div id="loadingOverlay" class="loading-overlay">
-  <div class="loading-box">
-    <div class="loading-spinner"></div>
-    <div class="loading-text" id="loadingText">Mengambil data dari Google Sheets...</div>
-    <div class="loading-sub" id="loadingSub">Mohon tunggu</div>
-  </div>
-</div>
-
 <script>
 Chart.defaults.devicePixelRatio = window.devicePixelRatio || 2;
 Chart.defaults.responsive = true;
 Chart.defaults.maintainAspectRatio = false;
 Chart.defaults.animation.duration = 500;
 
-const DEFAULT_DATA = {
-  status: [
-    { label:'Permit',          value:366 },
-    { label:'RFS',             value:259 },
-    { label:'Terminasi Done',  value:186 },
-    { label:'CCSI Takeout',    value:173 },
-    { label:'DROP',            value:53 },
-    { label:'Pulling Done',    value:51 },
-    { label:'DRM',             value:26 },
-    { label:'Pulling Cable',   value:13 }
-  ],
-  priority: [
-    { label:'P1', value:11 },
-    { label:'P2', value:40 },
-    { label:'P3', value:223 }
-  ],
-  permit: [
-    { label:'Permit Lingkungan Done', value:140 },
-    { label:'Permit NY Start',        value:50 },
-    { label:'Permit Ongoing',         value:30 },
-    { label:'Submit PU',              value:20 },
-    { label:'Community Rejected',     value:5 }
-  ]
-};
+const DATA_JSON_URL = "data.json";
 
-// =========================================================
-// APPS SCRIPT URL — JANGAN DIUBAH
-// =========================================================
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxhIEFUL0W75JexTeYXSeQTUQhqST34XIo7mKeLjefV654mf_8LzxtE0xJIRY8u7430/exec";
-const SHEET_GID = "573014540";
-const SHEET_CSV_URL = APPS_SCRIPT_URL + "?gid=" + SHEET_GID;
-
-// HANYA 1 PROXY — LANGSUNG KE APPS SCRIPT
-const PROXY_LIST = [
-  url => url
-];
-
-let currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+let currentData = { status: [], priority: [], permit: [] };
 let dataSource = 'default';
 
 const COLORS = ['#2563eb','#16a34a','#ea580c','#9333ea','#0891b2','#db2777','#ca8a04','#0284c7'];
@@ -251,15 +182,6 @@ function showToast(msg, type='info'){
   console.log(`[TOAST ${type.toUpperCase()}]`, msg);
 }
 
-function showLoading(text, sub){
-  document.getElementById('loadingText').textContent = text || 'Memuat...';
-  document.getElementById('loadingSub').textContent = sub || '';
-  document.getElementById('loadingOverlay').classList.add('show');
-}
-function hideLoading(){
-  document.getElementById('loadingOverlay').classList.remove('show');
-}
-
 function waitForCanvasSize(canvasEl, maxAttempts = 20){
   return new Promise((resolve) => {
     let attempts = 0;
@@ -268,12 +190,7 @@ function waitForCanvasSize(canvasEl, maxAttempts = 20){
       const rect = canvasEl.getBoundingClientRect();
       const parent = canvasEl.parentElement;
       const parentRect = parent ? parent.getBoundingClientRect() : null;
-
-      if(rect.width > 50 && rect.height > 50){
-        console.log(`✅ Canvas siap (${Math.round(rect.width)}x${Math.round(rect.height)})`);
-        resolve(rect);
-        return;
-      }
+      if(rect.width > 50 && rect.height > 50){ resolve(rect); return; }
       if(attempts >= maxAttempts){
         if(parent && parentRect && parentRect.height < 50){
           parent.style.height = '240px';
@@ -311,15 +228,9 @@ async function renderDashboard(){
   document.getElementById('lastUpdate').textContent = new Date().toLocaleString('id-ID');
 
   const badge = document.getElementById('dataSource');
-  if(dataSource === 'sheets'){
-    badge.className = 'status-badge ok';
-    badge.textContent = '📡 Live';
-    document.getElementById('sourceText').textContent = 'Google Sheets (Live)';
-  } else {
-    badge.className = 'status-badge warn';
-    badge.textContent = '📊 Default';
-    document.getElementById('sourceText').textContent = 'Default Data';
-  }
+  badge.className = 'status-badge ok';
+  badge.textContent = '📡 Live (data.json)';
+  document.getElementById('sourceText').textContent = 'data.json';
 
   const findVal = (name) => {
     const item = statusWithPct.find(d => d.label.toLowerCase() === name.toLowerCase());
@@ -366,8 +277,7 @@ async function renderCharts(statusWithPct, TOTAL){
           plugins:{ legend:{ display:false },
             tooltip:{ callbacks:{ label: ctx => `${ctx.label}: ${ctx.parsed} (${((ctx.parsed/TOTAL)*100).toFixed(1)}%)` } } } }
       }));
-      console.log('✅ Donut OK');
-    } catch(e){ console.error('❌ Donut:', e); }
+    } catch(e){ console.error('Donut:', e); }
   }
 
   document.getElementById('legend').innerHTML = statusWithPct.map(d=>`
@@ -383,15 +293,13 @@ async function renderCharts(statusWithPct, TOTAL){
       charts.push(new Chart(barEl, {
         type:'bar',
         data:{ labels: statusWithPct.map(d=>d.label),
-          datasets:[{ data: statusWithPct.map(d=>d.value), backgroundColor: statusWithPct.map(d=>d.color), borderRadius:6,
-            barThickness: window.innerWidth < 600 ? 20 : 28 }] },
+          datasets:[{ data: statusWithPct.map(d=>d.value), backgroundColor: statusWithPct.map(d=>d.color), borderRadius:6, barThickness: window.innerWidth < 600 ? 20 : 28 }] },
         options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false,
           plugins:{ legend:{display:false} },
           scales:{ x:{ ticks:{color:'#718096', font:{size:10}}, grid:{color:'#f1f5f9'} },
                    y:{ ticks:{color:'#1a202c', font:{size:10, weight:'600'}}, grid:{display:false} } } }
       }));
-      console.log('✅ Bar OK');
-    } catch(e){ console.error('❌ Bar:', e); }
+    } catch(e){ console.error('Bar:', e); }
   }
 
   const findVal = (name) => {
@@ -418,13 +326,11 @@ async function renderCharts(statusWithPct, TOTAL){
         type:'doughnut',
         data:{ labels: currentData.priority.map(d=>d.label),
           datasets:[{ data: currentData.priority.map(d=>d.value),
-            backgroundColor: ['#16a34a','#2563eb','#ea580c','#9333ea','#db2777'],
-            borderWidth:3, borderColor:'#fff' }] },
+            backgroundColor: ['#16a34a','#2563eb','#ea580c','#9333ea','#db2777'], borderWidth:3, borderColor:'#fff' }] },
         options:{ cutout:'60%', responsive:true, maintainAspectRatio:false,
           plugins:{ legend:{ position:'bottom', labels:{ color:'#4a5568', font:{size:10, weight:'600'}, padding:10, usePointStyle:true, boxWidth:8 } } } }
       }));
-      console.log('✅ Priority OK');
-    } catch(e){ console.error('❌ Priority:', e); }
+    } catch(e){ console.error('Priority:', e); }
   }
 
   const permitEl = document.getElementById('permitChart');
@@ -435,17 +341,14 @@ async function renderCharts(statusWithPct, TOTAL){
       charts.push(new Chart(permitEl, {
         type:'bar',
         data:{ labels: permitSorted.map(d=>d.label),
-          datasets:[{ data: permitSorted.map(d=>d.value), backgroundColor:'#ea580c', borderRadius:6,
-            barThickness: window.innerWidth < 600 ? 14 : 18 }] },
+          datasets:[{ data: permitSorted.map(d=>d.value), backgroundColor:'#ea580c', borderRadius:6, barThickness: window.innerWidth < 600 ? 14 : 18 }] },
         options:{ indexAxis:'y', responsive:true, maintainAspectRatio:false,
           plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label: ctx => `${ctx.parsed.x} sites` } } },
           scales:{ x:{ ticks:{color:'#718096', font:{size:9}}, grid:{color:'#f1f5f9'} },
                    y:{ ticks:{color:'#1a202c', font:{size:9, weight:'600'}}, grid:{display:false} } } }
       }));
-      console.log('✅ Permit OK');
-    } catch(e){ console.error('❌ Permit:', e); }
+    } catch(e){ console.error('Permit:', e); }
   }
-  console.log(`🎉 Selesai! ${charts.length} chart.`);
 }
 
 let resizeTimer;
@@ -457,153 +360,45 @@ window.addEventListener('orientationchange', () => {
   setTimeout(() => charts.forEach(c => { try { c.resize(); } catch(e){} }), 400);
 });
 
-async function fetchCSVWithFallback(url){
-  const maxAttempts = PROXY_LIST.length;
-  for(let attempt = 0; attempt < maxAttempts; attempt++){
-    const proxiedUrl = PROXY_LIST[attempt](url);
-    console.log(`[Attempt ${attempt+1}/${maxAttempts}]`, proxiedUrl);
-    showLoading(`Mengambil data...`, 'Mohon tunggu');
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 15000);
-      const response = await fetch(proxiedUrl, { method: 'GET', signal: controller.signal });
-      clearTimeout(timeoutId);
-      if(!response.ok) throw new Error(`HTTP ${response.status}`);
-      const text = await response.text();
-      if(!text || text.trim().length < 50) throw new Error('Response kosong');
-      if(text.trim().startsWith('<!DOCTYPE') || text.trim().startsWith('<html')) throw new Error('Response HTML');
-      console.log(`✅ Berhasil! Panjang: ${text.length} chars`);
-      const result = Papa.parse(text, { header: false, skipEmptyLines: true });
-      if(!result.data || result.data.length === 0) throw new Error('CSV kosong');
-      console.log(`✅ CSV parsed: ${result.data.length} baris`);
-      return result.data;
-    } catch(err){
-      console.warn(`❌ Attempt ${attempt+1} gagal:`, err.message);
-    }
-  }
-  throw new Error('Gagal ambil data dari Apps Script.');
-}
-
-async function updateFromSheets(){
+async function loadData(){
   const btn = document.getElementById('btnUpdate');
   btn.disabled = true;
   btn.textContent = '⏳ Loading...';
+
   const badge = document.getElementById('dataSource');
   badge.className = 'status-badge loading';
   badge.textContent = '⏳ Loading...';
-  showToast('⏳ Mengambil data dari Google Sheets...', 'info');
+
+  showToast('⏳ Mengambil data.json...', 'info');
+
   try {
-    const rows = await fetchCSVWithFallback(SHEET_CSV_URL);
-    const parsed = parseSiteList(rows);
-    if(parsed.status.length === 0) throw new Error('Data status tidak ditemukan.');
-    currentData = parsed;
+    const response = await fetch(DATA_JSON_URL + '?t=' + Date.now());
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+    
+    const data = await response.json();
+    if(!data.status || data.status.length === 0) throw new Error('data.json kosong');
+
+    currentData = {
+      status: data.status,
+      priority: data.priority || [],
+      permit: data.permit || []
+    };
     dataSource = 'sheets';
     await renderDashboard();
-    const total = parsed.status.reduce((s,d)=>s+d.value,0);
-    showToast(`✅ Berhasil! Total ${total.toLocaleString('id-ID')} sites.`, 'ok');
+
+    const total = data.total || data.status.reduce((s,d)=>s+d.value,0);
+    const updatedAt = data.updatedAt ? new Date(data.updatedAt).toLocaleString('id-ID') : '';
+    showToast(`✅ Berhasil! Total ${total.toLocaleString('id-ID')} sites. Update: ${updatedAt}`, 'ok');
+
   } catch(err){
     console.error('Error:', err);
-    showToast(`❌ Gagal: ${err.message || 'Tidak bisa ambil data'}`, 'err');
-    dataSource = 'default';
-    await renderDashboard();
+    showToast(`❌ Gagal: ${err.message}`, 'err');
+    badge.className = 'status-badge err';
+    badge.textContent = '❌ Gagal load data.json';
   } finally {
     btn.disabled = false;
-    btn.textContent = '🔄 Update';
-    hideLoading();
+    btn.textContent = '🔄 Refresh';
   }
-}
-
-function parseSiteList(rows){
-  const KEYWORDS = ['site id', 'progress fo', 'site priority', 'permit status', 'status', 'vendor'];
-  let headerIdx = -1, bestScore = 0;
-
-  for(let i = 0; i < Math.min(rows.length, 20); i++){
-    const row = rows[i] || [];
-    let score = 0;
-    for(const cell of row){
-      const c = (cell||'').toString().trim().toLowerCase();
-      if(KEYWORDS.some(k => c === k || c.includes(k))) score++;
-    }
-    if(score > bestScore){ bestScore = score; headerIdx = i; }
-  }
-
-  if(headerIdx === -1 || bestScore === 0) throw new Error('Baris header tidak ditemukan.');
-
-  const header = rows[headerIdx];
-  let progressFOIdx = -1, sitePriorityIdx = -1, permitStatusIdx = -1;
-
-  for(let i = 0; i < header.length; i++){
-    const h = (header[i]||'').toString().trim().toLowerCase();
-    if(h === 'progress fo' || h.includes('progress fo')) progressFOIdx = i;
-    if(h === 'site priority' || h.includes('site priority') || h.includes('priority')) sitePriorityIdx = i;
-    if(h === 'permit status' || h.includes('permit status')) permitStatusIdx = i;
-  }
-
-  if(progressFOIdx === -1){
-    for(let col = 0; col < (header.length||50); col++){
-      let hits = 0;
-      for(let r = headerIdx+1; r < Math.min(rows.length, headerIdx+50); r++){
-        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
-        if(v.includes('rfs') || v.includes('drm') || v.includes('permit') || v.includes('terminasi') || v.includes('pulling') || v.includes('takeout') || v.includes('drop')) hits++;
-      }
-      if(hits > 10){ progressFOIdx = col; break; }
-    }
-  }
-
-  if(permitStatusIdx === -1){
-    for(let col = 0; col < (header.length||50); col++){
-      let hits = 0;
-      for(let r = headerIdx+1; r < Math.min(rows.length, headerIdx+50); r++){
-        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
-        if(v.includes('permit') && !v.includes('progress')) hits++;
-      }
-      if(hits > 10){ permitStatusIdx = col; break; }
-    }
-  }
-
-  if(progressFOIdx === -1) throw new Error('Kolom "Progress FO" tidak ditemukan.');
-
-  const statusCount = {}, priorityCount = {}, permitCount = {};
-
-  for(let i = headerIdx + 1; i < rows.length; i++){
-    const r = rows[i];
-    if(!r || r.length === 0) continue;
-
-    const progress = (r[progressFOIdx]||'').toString().trim();
-    if(progress && !progress.startsWith('#') && !progress.toLowerCase().includes('n/a')){
-      let label = progress.replace(/^\d+\.\s*/, '').replace(/\s+/g, ' ').trim();
-      label = label.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
-      label = label.replace(/Rfs/g, 'RFS').replace(/Drm/g, 'DRM');
-      statusCount[label] = (statusCount[label]||0) + 1;
-    }
-
-    if(sitePriorityIdx !== -1){
-      const prio = (r[sitePriorityIdx]||'').toString().trim();
-      if(prio && !prio.startsWith('#') && prio.length < 10){
-        priorityCount[prio] = (priorityCount[prio]||0) + 1;
-      }
-    }
-
-    if(permitStatusIdx !== -1){
-      const permit = (r[permitStatusIdx]||'').toString().trim();
-      if(permit && !permit.startsWith('#') && !permit.toLowerCase().includes('n/a')){
-        permitCount[permit] = (permitCount[permit]||0) + 1;
-      }
-    }
-  }
-
-  const status = Object.keys(statusCount).map(k => ({ label: k, value: statusCount[k] }));
-  const priority = Object.keys(priorityCount).map(k => ({ label: k, value: priorityCount[k] })).sort((a,b)=>b.value-a.value);
-  const permit = Object.keys(permitCount).map(k => ({ label: k, value: permitCount[k] })).sort((a,b)=>b.value-a.value);
-
-  return { status, priority, permit };
-}
-
-function resetToDefault(){
-  currentData = JSON.parse(JSON.stringify(DEFAULT_DATA));
-  dataSource = 'default';
-  renderDashboard();
-  showToast('↺ Data dikembalikan ke default.', 'info');
 }
 
 function downloadData(){
@@ -615,16 +410,15 @@ function downloadData(){
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'ccsi-sitelist-' + new Date().toISOString().slice(0,10) + '.csv';
+  a.download = 'ccsi-data-' + new Date().toISOString().slice(0,10) + '.csv';
   a.click();
   URL.revokeObjectURL(url);
-  showToast('📥 Data berhasil didownload.', 'info');
+  showToast('📥 Downloaded!', 'info');
 }
 
 window.addEventListener('load', async () => {
   await new Promise(r => setTimeout(r, 300));
-  await renderDashboard();
-  showToast('📊 Dashboard siap. Klik "🔄 Update" untuk live data.', 'info');
+  await loadData();
 });
 </script>
 </body>
