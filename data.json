@@ -32,25 +32,49 @@
   "priority": [
     {
       "label": "P1",
-      "value": 364
+      "value": 11
     },
     {
       "label": "P2",
-      "value": 222
-    },
-    {
-      "label": "DROP",
-      "value": 215
+      "value": 40
     },
     {
       "label": "P3",
-      "value": 151
-    },
-    {
-      "label": "P4",
-      "value": 45
+      "value": 223
     }
   ],
+  "priorityByStatus": {
+    "permit": [
+      {
+        "label": "P2",
+        "value": 2
+      },
+      {
+        "label": "P3",
+        "value": 95
+      }
+    ],
+    "pulling cable": [
+      {
+        "label": "P2",
+        "value": 1
+      },
+      {
+        "label": "P3",
+        "value": 1
+      }
+    ],
+    "pulling done": [
+      {
+        "label": "P2",
+        "value": 6
+      },
+      {
+        "label": "P3",
+        "value": 12
+      }
+    ]
+  },
   "permit": [
     {
       "label": "Permit Lingkungan done",
@@ -97,6 +121,6 @@
       "value": 1
     }
   ],
-  "updatedAt": "2026-10-07T05:40:54.588Z",
+  "updatedAt": "2026-10-07T05:50:50.386Z",
   "total": 1127
 }
