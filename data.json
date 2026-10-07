@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 184
+      "value": 187
     },
     {
       "label": "RFS",
@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 295
+      "value": 293
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 69
+      "value": 68
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 95
+        "value": 94
       }
     ],
     "pulling cable": [
@@ -71,7 +71,7 @@
       },
       {
         "label": "P3",
-        "value": 12
+        "value": 11
       }
     ]
   },
@@ -4593,7 +4593,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -5025,7 +5025,7 @@
       "kota": "KAB. TULUNGAGUNG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "Louis"
@@ -5805,7 +5805,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -5997,7 +5997,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -7005,7 +7005,7 @@
       "kota": "Kota Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -12705,7 +12705,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12729,7 +12729,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -13645,8 +13645,164 @@
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
+    },
+    {
+      "siteId": "JMR-07-014",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0745-H-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JMR-07-087",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JMR-07-116",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "162966126",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "161332104",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "162187109",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JMR-07-341",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "BDW-07-040",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0712-H-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "BDW-07-026",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "R3500194",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1649802007",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-07T08:06:57.765Z",
+  "updatedAt": "2026-10-07T09:06:23.517Z",
   "total": 1127
 }
