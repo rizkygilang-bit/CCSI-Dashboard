@@ -70,96 +70,80 @@ function parseSiteList(rows) {
   }
   if (headerIdx === -1 || bestScore < 2) throw new Error('Header tidak ditemukan');
   
-  console.log('✅ Header di baris:', headerIdx + 1);
   const header = rows[headerIdx];
+  console.log('Header:', header.slice(0, 20));
   
-  let progressFOIdx = -1, custPrioIdx = -1, permitStatusIdx = -1;
-  
-  for (let i = 0; i < header.length; i++) {
-    const h = (header[i] || '').toString().trim().toLowerCase();
-    if (h === 'progress fo' || h.includes('progress fo') || h === 'progres fo') progressFOIdx = i;
-    if (h === 'cust prio' || h.includes('cust prio') || h.includes('customer priority') || h === 'priority') custPrioIdx = i;
-    if (h === 'permit status' || h.includes('permit status')) permitStatusIdx = i;
-  }
-  
-  // Fallback: cari kolom Cust PRIO yang isinya P1/P2/P3/P4
-  if (custPrioIdx === -1) {
-    for (let col = 0; col < (header.length || 50); col++) {
-      let hits = 0;
-      for (let r = headerIdx + 1; r < Math.min(rows.length, headerIdx + 100); r++) {
-        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().trim().toUpperCase();
-        if (v === 'P1' || v === 'P2' || v === 'P3' || v === 'P4' || v === 'DROP') hits++;
-      }
-      if (hits > 10) { custPrioIdx = col; console.log('📌 Fallback Cust PRIO di kolom:', col); break; }
-    }
-  }
-  
-  if (progressFOIdx === -1) {
-    for (let col = 0; col < (header.length || 50); col++) {
-      let hits = 0;
-      for (let r = headerIdx + 1; r < Math.min(rows.length, headerIdx + 100); r++) {
-        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
-        if (v.includes('rfs') || v.includes('drm') || v.includes('permit') || v.includes('terminasi') || v.includes('pulling') || v.includes('takeout') || v.includes('drop')) hits++;
-      }
-      if (hits > 20) { progressFOIdx = col; break; }
-    }
-  }
-  
-  if (permitStatusIdx === -1) {
-    for (let col = 0; col < (header.length || 50); col++) {
-      let hits = 0;
-      for (let r = headerIdx + 1; r < Math.min(rows.length, headerIdx + 100); r++) {
-        const v = (rows[r] && rows[r][col] ? rows[r][col] : '').toString().toLowerCase();
-        if (v.includes('permit') && !v.includes('progress')) hits++;
-      }
-      if (hits > 20) { permitStatusIdx = col; break; }
-    }
-  }
-  
-  console.log('📊 Index kolom:', { progressFOIdx, custPrioIdx, permitStatusIdx });
-  
-  if (progressFOIdx === -1) throw new Error('Kolom Progress FO tidak ditemukan');
-  if (custPrioIdx === -1) throw new Error('Kolom Cust PRIO tidak ditemukan');
-  
-  const statusCount = {}, permitCount = {};
-  
-  // Priority per status — dari kolom "Cust PRIO"
-  const priorityByStatus = {
-    'permit': {},
-    'pulling cable': {},
-    'pulling done': {}
+  // Cari index kolom
+  const colIdx = {};
+  const COL_MAP = {
+    'siteId': ['site id'],
+    'ranVendor': ['ran vendor', 'vendor'],
+    'siteName': ['site name'],
+    'tp': ['tp'],
+    'kota': ['kota'],
+    'province': ['province', 'provinsi'],
+    'topology': ['topology'],
+    'progressFO': ['progress fo', 'progres fo'],
+    'custPrio': ['cust prio', 'customer priority'],
+    'permitStatus': ['permit status'],
+    'rpm': ['rpm'],
+    'monthPermit': ['month permit'],
+    'monthAchievement': ['month achievement', 'month achivement']
   };
   
-  // Priority overall (untuk fallback)
+  Object.keys(COL_MAP).forEach(key => {
+    const aliases = COL_MAP[key];
+    for (let i = 0; i < header.length; i++) {
+      const h = (header[i] || '').toString().trim().toLowerCase();
+      if (aliases.some(a => h === a || h.includes(a))) {
+        colIdx[key] = i;
+        break;
+      }
+    }
+  });
+  
+  console.log('Kolom terdeteksi:', colIdx);
+  
+  if (colIdx.progressFO === undefined) throw new Error('Kolom Progress FO tidak ditemukan');
+  
+  const statusCount = {}, permitCount = {};
+  const priorityByStatus = { 'permit': {}, 'pulling cable': {}, 'pulling done': {} };
   const priorityOverall = {};
+  
+  // ✅ DATA PER-SITE (untuk tabel detail)
+  const sites = [];
   
   let rowsProcessed = 0;
   
   for (let i = headerIdx + 1; i < rows.length; i++) {
     const r = rows[i];
     if (!r || r.length === 0) continue;
+    
+    // Skip baris yang tidak punya Site ID
+    const siteId = colIdx.siteId !== undefined ? (r[colIdx.siteId] || '').toString().trim() : '';
+    if (!siteId || siteId.length < 3) continue;
+    
     rowsProcessed++;
     
-    // === Progress FO ===
-    const progressRaw = (r[progressFOIdx] || '').toString().trim();
+    const progressRaw = (r[colIdx.progressFO] || '').toString().trim();
     const progressNorm = normalizeStatus(progressRaw);
+    const progressLabel = normalizeLabel(progressRaw);
     
     // Status count
     if (progressRaw && !progressRaw.startsWith('#') && !progressRaw.toLowerCase().includes('n/a')) {
-      const label = normalizeLabel(progressRaw);
-      if (label) statusCount[label] = (statusCount[label] || 0) + 1;
+      if (progressLabel) statusCount[progressLabel] = (statusCount[progressLabel] || 0) + 1;
     }
     
-    // === Cust PRIO (P1, P2, P3, P4, DROP) ===
-    const prioRaw = (r[custPrioIdx] || '').toString().trim().toUpperCase();
-    const prio = prioRaw.length > 0 && prioRaw.length < 10 ? prioRaw : '';
+    // Priority
+    let prio = '';
+    if (colIdx.custPrio !== undefined) {
+      prio = (r[colIdx.custPrio] || '').toString().trim().toUpperCase();
+      if (prio.startsWith('#') || prio.length > 10) prio = '';
+    }
     
-    if (prio && !prio.startsWith('#')) {
-      // Overall
+    if (prio) {
       priorityOverall[prio] = (priorityOverall[prio] || 0) + 1;
       
-      // Per status — cek 3 status target
-      // Progress FO biasanya format: "4. Permit", "5. Pulling cable", "6. Pulling done"
       if (progressNorm.includes('permit') && !progressNorm.includes('pulling')) {
         priorityByStatus['permit'][prio] = (priorityByStatus['permit'][prio] || 0) + 1;
       }
@@ -171,22 +155,37 @@ function parseSiteList(rows) {
       }
     }
     
-    // === Permit Status ===
-    if (permitStatusIdx !== -1) {
-      const permit = (r[permitStatusIdx] || '').toString().trim();
+    // Permit status
+    if (colIdx.permitStatus !== undefined) {
+      const permit = (r[colIdx.permitStatus] || '').toString().trim();
       if (permit && !permit.startsWith('#') && !permit.toLowerCase().includes('n/a')) {
         permitCount[permit] = (permitCount[permit] || 0) + 1;
       }
     }
+    
+    // ✅ SIMPAN DATA PER-SITE (untuk tabel)
+    const site = {
+      siteId: siteId,
+      siteName: colIdx.siteName !== undefined ? (r[colIdx.siteName] || '').toString().trim() : '',
+      ranVendor: colIdx.ranVendor !== undefined ? (r[colIdx.ranVendor] || '').toString().trim() : '',
+      kota: colIdx.kota !== undefined ? (r[colIdx.kota] || '').toString().trim() : '',
+      province: colIdx.province !== undefined ? (r[colIdx.province] || '').toString().trim() : '',
+      topology: colIdx.topology !== undefined ? (r[colIdx.topology] || '').toString().trim() : '',
+      progressFO: progressLabel,
+      custPrio: prio,
+      permitStatus: colIdx.permitStatus !== undefined ? (r[colIdx.permitStatus] || '').toString().trim() : '',
+      rpm: colIdx.rpm !== undefined ? (r[colIdx.rpm] || '').toString().trim() : ''
+    };
+    
+    sites.push(site);
   }
   
   console.log('📈 Rows processed:', rowsProcessed);
+  console.log('📋 Sites saved:', sites.length);
   
-  // Format output
   const status = Object.keys(statusCount).map(k => ({ label: k, value: statusCount[k] }));
   const permit = Object.keys(permitCount).map(k => ({ label: k, value: permitCount[k] })).sort((a, b) => b.value - a.value);
   
-  // Priority per status — urutkan P1, P2, P3, P4, DROP
   const priorityOrder = ['P1', 'P2', 'P3', 'P4', 'DROP'];
   const priorityByStatusFinal = {};
   ['permit', 'pulling cable', 'pulling done'].forEach(key => {
@@ -199,15 +198,12 @@ function parseSiteList(rows) {
     .filter(p => priorityOverall[p] !== undefined)
     .map(p => ({ label: p, value: priorityOverall[p] }));
   
-  console.log('⭐ Priority Permit:', JSON.stringify(priorityByStatusFinal['permit']));
-  console.log('⭐ Priority Pulling Cable:', JSON.stringify(priorityByStatusFinal['pulling cable']));
-  console.log('⭐ Priority Pulling Done:', JSON.stringify(priorityByStatusFinal['pulling done']));
-  
   return {
     status,
     priority: priorityOverallFinal,
     priorityByStatus: priorityByStatusFinal,
-    permit
+    permit,
+    sites  // ← DATA PER-SITE
   };
 }
 
@@ -227,6 +223,7 @@ function parseSiteList(rows) {
     fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
     console.log('✅ Saved data.json');
     console.log('Total sites:', data.total);
+    console.log('Sites array length:', data.sites.length);
     
   } catch (err) {
     console.error('❌ Error:', err.message);
