@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 188
+      "value": 189
     },
     {
       "label": "RFS",
@@ -10,15 +10,15 @@
     },
     {
       "label": "Permit",
-      "value": 289
+      "value": 286
     },
     {
       "label": "Drop",
-      "value": 126
+      "value": 127
     },
     {
       "label": "Pulling Done",
-      "value": 68
+      "value": 69
     },
     {
       "label": "Ccsi Takeout",
@@ -82,7 +82,7 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 220
+      "value": 209
     },
     {
       "label": "Site Drop",
@@ -90,7 +90,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 111
+      "value": 122
     },
     {
       "label": "Community rejected",
@@ -2997,7 +2997,7 @@
       "kota": "Malang",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -5985,7 +5985,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6563,7 +6563,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -7293,7 +7293,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -13079,7 +13079,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13091,7 +13091,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13103,7 +13103,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13115,7 +13115,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13187,7 +13187,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13199,7 +13199,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13211,7 +13211,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13247,7 +13247,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13259,7 +13259,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13271,7 +13271,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -13707,6 +13707,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-08T10:07:10.320Z",
+  "updatedAt": "2026-10-08T11:06:14.303Z",
   "total": 1132
 }
