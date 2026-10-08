@@ -13645,8 +13645,20 @@
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
+    },
+    {
+      "siteId": "120331109",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-08T04:05:57.568Z",
+  "updatedAt": "2026-10-08T05:06:03.960Z",
   "total": 1127
 }
