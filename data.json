@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 284
+      "value": 285
     },
     {
       "label": "Drop",
@@ -13648,17 +13648,17 @@
     },
     {
       "siteId": "120331109",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
+      "siteName": "TOLPDLARANG-SASAKBEUSI",
+      "ranVendor": "Huawei",
+      "kota": "KAB. BANDUNG BARAT",
+      "province": "JAWA BARAT",
+      "topology": "Ring",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "",
-      "rpm": ""
+      "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-08T05:06:03.960Z",
-  "total": 1127
+  "updatedAt": "2026-10-08T06:07:10.017Z",
+  "total": 1128
 }
