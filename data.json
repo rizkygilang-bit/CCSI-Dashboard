@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 293
+      "value": 284
     },
     {
       "label": "Drop",
-      "value": 117
+      "value": 126
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 94
+        "value": 87
       }
     ],
     "pulling cable": [
@@ -4641,7 +4641,7 @@
       "kota": "Kediri",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "Louis"
@@ -9441,7 +9441,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9453,7 +9453,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9465,7 +9465,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9477,7 +9477,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9489,10 +9489,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": ""
     },
     {
       "siteId": "122320109",
@@ -9501,10 +9501,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": ""
     },
     {
       "siteId": "JAW-WJV-0761-X-B",
@@ -9513,10 +9513,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": ""
     },
     {
       "siteId": "124449109",
@@ -9525,10 +9525,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": ""
     },
     {
       "siteId": "1280461003",
@@ -13645,164 +13645,8 @@
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
-    },
-    {
-      "siteId": "JMR-07-014",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-EJV-0745-H-P",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JMR-07-087",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JMR-07-116",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "162966126",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "161332104",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "162187109",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JMR-07-341",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDW-07-040",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-EJV-0712-H-P",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDW-07-026",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "R3500194",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1649802007",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-08T03:05:41.246Z",
+  "updatedAt": "2026-10-08T04:05:57.568Z",
   "total": 1127
 }
