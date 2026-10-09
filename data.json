@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 283
+      "value": 293
     },
     {
       "label": "Drop",
-      "value": 127
+      "value": 117
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 87
+        "value": 106
       }
     ],
     "pulling cable": [
@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 542
+      "value": 541
     },
     {
       "label": "Permit NY Start",
@@ -82,23 +82,23 @@
     },
     {
       "label": "Site Drop",
-      "value": 198
+      "value": 199
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 122
+      "value": 121
     },
     {
       "label": "Community rejected",
-      "value": 24
-    },
-    {
-      "label": "Submit PU",
-      "value": 16
+      "value": 28
     },
     {
       "label": "Permit Start",
       "value": 14
+    },
+    {
+      "label": "Submit PU",
+      "value": 13
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan); Negotiation",
@@ -653,7 +653,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HOTMA"
@@ -1793,7 +1793,7 @@
       "kota": "Pasuruan",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HOTMA"
@@ -1985,7 +1985,7 @@
       "kota": "Pasuruan",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HOTMA"
@@ -2971,7 +2971,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Community rejected",
       "rpm": "HOTMA"
     },
     {
@@ -5429,9 +5429,9 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Submit PU",
+      "permitStatus": "Community rejected",
       "rpm": "HOTMA"
     },
     {
@@ -5609,9 +5609,9 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Submit PU",
+      "permitStatus": "Community rejected",
       "rpm": "HOTMA"
     },
     {
@@ -7409,7 +7409,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -7553,7 +7553,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Star",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7817,7 +7817,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HOTMA"
@@ -7829,9 +7829,9 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Submit PU",
+      "permitStatus": "Community rejected",
       "rpm": "HOTMA"
     },
     {
@@ -9953,10 +9953,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "110480109",
@@ -9965,10 +9965,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0818-U-P",
@@ -9977,10 +9977,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "DPK-04-103",
@@ -9989,10 +9989,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0193-U-P",
@@ -10001,10 +10001,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "DPK-04-054",
@@ -10013,10 +10013,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "120504110",
@@ -10025,10 +10025,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "DPK-04-075",
@@ -10037,7 +10037,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -10049,10 +10049,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0230-H-P",
@@ -10325,10 +10325,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0004-T-B",
@@ -10337,10 +10337,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "122326109",
@@ -10349,10 +10349,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "CKG-04-377",
@@ -10361,10 +10361,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "DPK-04-092",
@@ -10373,10 +10373,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "123119109",
@@ -10385,10 +10385,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "123369109",
@@ -10397,10 +10397,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "121059104",
@@ -10409,10 +10409,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "120831109",
@@ -10421,10 +10421,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "DPK-04-142",
@@ -10433,10 +10433,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0030-X-F",
@@ -12667,7 +12667,7 @@
       "topology": "Chain",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Site Drop",
       "rpm": "HOTMA"
     },
     {
@@ -13703,6 +13703,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-09T09:07:15.156Z",
+  "updatedAt": "2026-10-09T10:06:41.034Z",
   "total": 1132
 }
