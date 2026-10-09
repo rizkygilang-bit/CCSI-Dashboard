@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 286
+      "value": 283
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 69
+      "value": 72
     },
     {
       "label": "Ccsi Takeout",
@@ -90,11 +90,11 @@
     },
     {
       "label": "Community rejected",
-      "value": 23
+      "value": 24
     },
     {
       "label": "Submit PU",
-      "value": 17
+      "value": 16
     },
     {
       "label": "Permit Start",
@@ -7819,7 +7819,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Submit PU",
+      "permitStatus": "Community rejected",
       "rpm": "HOTMA"
     },
     {
@@ -8381,7 +8381,7 @@
       "kota": "Sukabumi",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -9785,7 +9785,7 @@
       "kota": "KAB. SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -9833,7 +9833,7 @@
       "kota": "KAB. SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -13703,6 +13703,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-09T08:06:54.650Z",
+  "updatedAt": "2026-10-09T09:07:15.156Z",
   "total": 1132
 }
