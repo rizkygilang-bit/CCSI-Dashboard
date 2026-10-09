@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 189
+      "value": 190
     },
     {
       "label": "RFS",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 7
     }
   ],
   "priority": [
@@ -56,10 +56,6 @@
     ],
     "pulling cable": [
       {
-        "label": "P2",
-        "value": 1
-      },
-      {
         "label": "P3",
         "value": 1
       }
@@ -67,7 +63,7 @@
     "pulling done": [
       {
         "label": "P2",
-        "value": 6
+        "value": 7
       },
       {
         "label": "P3",
@@ -6297,7 +6293,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -11181,7 +11177,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "P2",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TDT"
@@ -13707,6 +13703,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-09T07:09:13.657Z",
+  "updatedAt": "2026-10-09T08:06:54.650Z",
   "total": 1132
 }
