@@ -78,11 +78,11 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 538
+      "value": 542
     },
     {
       "label": "Permit NY Start",
-      "value": 209
+      "value": 205
     },
     {
       "label": "Site Drop",
@@ -9455,7 +9455,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9887,7 +9887,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9911,7 +9911,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9935,7 +9935,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -13707,6 +13707,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-09T06:07:37.136Z",
+  "updatedAt": "2026-10-09T07:09:13.657Z",
   "total": 1132
 }
