@@ -6,19 +6,19 @@
     },
     {
       "label": "RFS",
-      "value": 280
+      "value": 279
     },
     {
       "label": "Permit",
-      "value": 293
+      "value": 229
     },
     {
       "label": "Drop",
-      "value": 117
+      "value": 183
     },
     {
       "label": "Pulling Done",
-      "value": 72
+      "value": 71
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 106
+        "value": 79
       }
     ],
     "pulling cable": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 11
+        "value": 10
       }
     ]
   },
@@ -941,7 +941,7 @@
       "kota": "KAB. LAMONGAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -989,7 +989,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -1265,7 +1265,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -1445,7 +1445,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan); Negotiation",
       "rpm": "ERICK"
@@ -1541,7 +1541,7 @@
       "kota": "Sidoarjo",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "RFS",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -1733,7 +1733,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -1949,7 +1949,7 @@
       "kota": "Sidoarjo",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -2081,7 +2081,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -2225,7 +2225,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -2453,7 +2453,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Star",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -3629,7 +3629,7 @@
       "kota": "KAB. MOJOKERTO",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -3641,7 +3641,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -6845,7 +6845,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -7433,7 +7433,7 @@
       "kota": "Bojonegoro",
       "province": "JAWA TIMUR",
       "topology": "Star",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -7457,7 +7457,7 @@
       "kota": "KAB. LAMONGAN",
       "province": "JAWA TIMUR",
       "topology": "Star",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -7469,7 +7469,7 @@
       "kota": "KAB. LAMONGAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -7589,7 +7589,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -7649,7 +7649,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -7853,7 +7853,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -7973,7 +7973,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8057,7 +8057,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8069,7 +8069,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8081,7 +8081,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8093,7 +8093,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8141,7 +8141,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8153,7 +8153,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8165,7 +8165,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8177,7 +8177,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8189,7 +8189,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8525,7 +8525,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8537,7 +8537,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8549,7 +8549,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8561,7 +8561,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8669,7 +8669,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8717,7 +8717,7 @@
       "kota": "Kota Surabaya",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8753,7 +8753,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8777,7 +8777,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
@@ -8789,7 +8789,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8849,7 +8849,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8861,7 +8861,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8873,7 +8873,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -8885,7 +8885,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -8897,7 +8897,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -9029,7 +9029,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
@@ -9041,7 +9041,7 @@
       "kota": "Gresik",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
@@ -9113,7 +9113,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -9137,7 +9137,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -9449,7 +9449,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -10121,7 +10121,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -12173,7 +12173,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12185,7 +12185,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12197,7 +12197,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12209,7 +12209,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12245,7 +12245,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -12269,7 +12269,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12329,7 +12329,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -12341,7 +12341,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12353,7 +12353,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -12533,7 +12533,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12569,7 +12569,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
@@ -12593,7 +12593,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12605,7 +12605,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12797,7 +12797,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12809,7 +12809,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12821,7 +12821,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12833,7 +12833,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12869,7 +12869,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12881,7 +12881,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -13703,6 +13703,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-12T03:07:10.798Z",
+  "updatedAt": "2026-10-12T04:08:06.359Z",
   "total": 1132
 }
