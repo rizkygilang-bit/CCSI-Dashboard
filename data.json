@@ -10,15 +10,15 @@
     },
     {
       "label": "Permit",
-      "value": 227
+      "value": 225
     },
     {
       "label": "Drop",
-      "value": 181
+      "value": 182
     },
     {
       "label": "Pulling Done",
-      "value": 75
+      "value": 76
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 81
+        "value": 80
       }
     ],
     "pulling cable": [
@@ -812,7 +812,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
-      "rpm": "CAO"
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-EJV-0114-I-B",
@@ -7277,7 +7277,7 @@
       "kota": "Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -9401,7 +9401,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Star",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -13703,6 +13703,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-12T09:08:33.712Z",
+  "updatedAt": "2026-10-12T10:08:31.159Z",
   "total": 1132
 }
