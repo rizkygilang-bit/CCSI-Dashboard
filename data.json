@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 229
+      "value": 231
     },
     {
       "label": "Drop",
-      "value": 183
+      "value": 181
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 79
+        "value": 81
       }
     ],
     "pulling cable": [
@@ -74,11 +74,11 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 541
+      "value": 545
     },
     {
       "label": "Permit NY Start",
-      "value": 205
+      "value": 204
     },
     {
       "label": "Site Drop",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 121
+      "value": 118
     },
     {
       "label": "Community rejected",
@@ -3872,7 +3872,7 @@
       "progressFO": "Ccsi Takeout",
       "custPrio": "",
       "permitStatus": "Site Drop",
-      "rpm": "ACI"
+      "rpm": ""
     },
     {
       "siteId": "JAW-WJV-0821-H-P",
@@ -4567,7 +4567,7 @@
       "topology": "Chain",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
     },
     {
@@ -4603,7 +4603,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
     },
     {
@@ -5323,7 +5323,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
     },
     {
@@ -5335,7 +5335,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
     },
     {
@@ -5840,7 +5840,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0203-M-P",
@@ -5852,7 +5852,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "1269312003",
@@ -5936,7 +5936,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan); Negotiation",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0354-U-P",
@@ -6020,7 +6020,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "TBG05_WJ031",
@@ -6056,7 +6056,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "124083109",
@@ -6152,7 +6152,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "NPH-05-221",
@@ -6188,7 +6188,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "NPH-05-037",
@@ -6212,7 +6212,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "1273411023",
@@ -6236,7 +6236,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "NPH-05-075",
@@ -6272,7 +6272,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0459-X-P",
@@ -6284,7 +6284,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "1270862004",
@@ -6344,7 +6344,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "124713126",
@@ -6416,7 +6416,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "122239109",
@@ -6452,7 +6452,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "NPH-05-140",
@@ -6548,7 +6548,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "NPH-05-054",
@@ -6584,7 +6584,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "E3500091",
@@ -9485,10 +9485,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "122320109",
@@ -9497,10 +9497,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-WJV-0761-X-B",
@@ -9509,10 +9509,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "124449109",
@@ -9521,10 +9521,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "1280461003",
@@ -9845,7 +9845,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -9941,7 +9941,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -13652,7 +13652,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Start",
-      "rpm": "PDS"
+      "rpm": "CAO"
     },
     {
       "siteId": "121270104",
@@ -13703,6 +13703,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-12T04:08:06.359Z",
+  "updatedAt": "2026-10-12T05:08:19.451Z",
   "total": 1132
 }
