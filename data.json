@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 231
+      "value": 227
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 71
+      "value": 75
     },
     {
       "label": "Ccsi Takeout",
@@ -6077,7 +6077,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -8393,7 +8393,7 @@
       "kota": "KAB. SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8405,7 +8405,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8477,7 +8477,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -13664,7 +13664,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "BC43",
@@ -13676,7 +13676,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-WJV-0789-X-P",
@@ -13688,7 +13688,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "KCP sukaraja 43192",
@@ -13700,9 +13700,9 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Start",
-      "rpm": ""
+      "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-12T06:08:56.907Z",
+  "updatedAt": "2026-10-12T07:14:52.983Z",
   "total": 1132
 }
