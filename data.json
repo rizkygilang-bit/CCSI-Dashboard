@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 167
+      "value": 168
     },
     {
       "label": "RFS",
@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 219
+      "value": 218
     },
     {
       "label": "Drop",
@@ -6245,7 +6245,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -13703,6 +13703,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-13T09:13:41.331Z",
+  "updatedAt": "2026-10-13T09:34:58.489Z",
   "total": 1132
 }
