@@ -2,7 +2,7 @@ name: Update Data from Google Sheets
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/15 * * * *'      # ← Tiap 15 menit
   workflow_dispatch:
   push:
     branches: [main]
@@ -37,7 +37,6 @@ jobs:
           
           git commit -m "Auto-update data $(date -u +'%Y-%m-%d %H:%M UTC')"
           
-          # Retry push hingga 3 kali kalau ada conflict
           for i in 1 2 3; do
             if git push; then
               echo "✅ Push berhasil"
