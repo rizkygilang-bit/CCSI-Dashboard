@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 216
+      "value": 215
     },
     {
       "label": "Drop",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 9
     }
   ],
   "priority": [
@@ -8249,7 +8249,7 @@
       "kota": "KAB. BOGOR",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Cable",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "Louis"
@@ -13703,6 +13703,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-13T11:13:13.208Z",
+  "updatedAt": "2026-10-13T11:33:36.225Z",
   "total": 1132
 }
