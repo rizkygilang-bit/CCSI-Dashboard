@@ -13701,8 +13701,104 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
+    },
+    {
+      "siteId": "160657104",
+      "siteName": "",
+      "ranVendor": "TBG_GIRI",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "R3580114",
+      "siteName": "",
+      "ranVendor": "CMI_BATURADEN",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "E3500464",
+      "siteName": "",
+      "ranVendor": "CMI_MAYANG",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "R3580081",
+      "siteName": "",
+      "ranVendor": "CMI_GLAGAHWERO",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "E3500458",
+      "siteName": "",
+      "ranVendor": "CMI_JEMBERCITY",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "E3500461",
+      "siteName": "",
+      "ranVendor": "CMI_JTC_JEMBER",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "161857109",
+      "siteName": "",
+      "ranVendor": "TBG_KEBONSARI_2",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1657011003",
+      "siteName": "",
+      "ranVendor": "TBG_TEGAL_BESAR_DARUS_SHOLAH",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-13T07:20:01.378Z",
+  "updatedAt": "2026-10-13T07:46:13.054Z",
   "total": 1132
 }
