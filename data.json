@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 215
+      "value": 217
     },
     {
       "label": "Drop",
-      "value": 177
+      "value": 175
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 87
+        "value": 89
       }
     ],
     "pulling cable": [
@@ -9461,10 +9461,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ORANGE"
+      "rpm": "ERICK"
     },
     {
       "siteId": "121052104",
@@ -9473,10 +9473,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ORANGE"
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-WJV-0756-H-P",
@@ -13701,56 +13701,8 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
-    },
-    {
-      "siteId": "JAW-WJV-0772-X-B",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3500251",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "KCP Sb Demak 60173A",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3500355",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-13T16:34:24.293Z",
+  "updatedAt": "2026-10-13T16:57:55.854Z",
   "total": 1132
 }
