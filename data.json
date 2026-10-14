@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 217
+      "value": 216
     },
     {
       "label": "Drop",
-      "value": 175
+      "value": 176
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 89
+        "value": 88
       }
     ],
     "pulling cable": [
@@ -10013,7 +10013,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -13703,6 +13703,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-14T03:18:11.725Z",
+  "updatedAt": "2026-10-14T03:58:01.136Z",
   "total": 1132
 }
