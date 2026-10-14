@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 550
+      "value": 551
     },
     {
       "label": "Site Drop",
@@ -82,7 +82,7 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 188
+      "value": 187
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
@@ -13123,7 +13123,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "P2",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
     },
     {
@@ -13703,6 +13703,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-14T07:11:13.728Z",
+  "updatedAt": "2026-10-14T07:46:19.952Z",
   "total": 1132
 }
