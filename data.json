@@ -74,23 +74,23 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 551
+      "value": 532
     },
     {
       "label": "Site Drop",
-      "value": 200
+      "value": 199
     },
     {
       "label": "Permit NY Start",
-      "value": 187
+      "value": 186
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 128
+      "value": 150
     },
     {
       "label": "Community rejected",
-      "value": 28
+      "value": 22
     },
     {
       "label": "Permit Start",
@@ -102,19 +102,15 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan); Negotiation",
-      "value": 6
+      "value": 8
     },
     {
       "label": "Permit Reject (High Donation)",
-      "value": 3
-    },
-    {
-      "label": "Permit Hold",
-      "value": 1
+      "value": 6
     },
     {
       "label": "Permit Issued",
-      "value": 1
+      "value": 2
     }
   ],
   "sites": [
@@ -1315,7 +1311,7 @@
       "topology": "Chain",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -1327,7 +1323,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -1351,7 +1347,7 @@
       "topology": "Ring",
       "progressFO": "Ccsi Takeout",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": ""
     },
     {
@@ -1387,7 +1383,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -1747,7 +1743,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -1939,7 +1935,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Cable",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -1987,7 +1983,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HOTMA"
     },
     {
@@ -2035,7 +2031,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -2059,7 +2055,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -2191,7 +2187,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Hold",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -2203,7 +2199,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
     },
     {
@@ -5839,7 +5835,7 @@
       "topology": "Chain",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "CAO"
     },
     {
@@ -5851,7 +5847,7 @@
       "topology": "Chain",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "CAO"
     },
     {
@@ -5995,7 +5991,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "PDS"
     },
     {
@@ -6007,7 +6003,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -6031,7 +6027,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "PDS"
     },
     {
@@ -6043,7 +6039,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -6091,7 +6087,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Reject (High Donation)",
       "rpm": "PDS"
     },
     {
@@ -6103,7 +6099,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -6115,7 +6111,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan); Negotiation",
       "rpm": "CAO"
     },
     {
@@ -6139,7 +6135,7 @@
       "topology": "Chain",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan); Negotiation",
       "rpm": "PDS"
     },
     {
@@ -6463,7 +6459,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -6499,7 +6495,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "PDS"
     },
     {
@@ -6511,7 +6507,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6619,7 +6615,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
     },
     {
@@ -6679,7 +6675,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
     },
     {
@@ -6883,7 +6879,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6895,7 +6891,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6907,7 +6903,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "P2",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6919,7 +6915,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "P2",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6931,7 +6927,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6943,7 +6939,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Cable",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -6979,7 +6975,7 @@
       "topology": "Star",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
     },
     {
@@ -7051,7 +7047,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7063,7 +7059,7 @@
       "topology": "Chain",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7075,7 +7071,7 @@
       "topology": "Chain",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7087,7 +7083,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Cable",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7111,7 +7107,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7123,7 +7119,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7267,7 +7263,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Site Drop",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -7279,7 +7275,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -8455,7 +8451,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Issued",
       "rpm": "ERICK"
     },
     {
@@ -8671,7 +8667,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -8695,7 +8691,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
     },
     {
@@ -8707,7 +8703,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
     },
     {
@@ -8719,7 +8715,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
     },
     {
@@ -8731,7 +8727,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
     },
     {
@@ -8743,7 +8739,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
     },
     {
@@ -8767,7 +8763,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
     },
     {
@@ -8803,7 +8799,7 @@
       "topology": "Chain",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Lingkungan done",
+      "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
     },
     {
@@ -9955,7 +9951,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10039,7 +10035,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10075,7 +10071,7 @@
       "topology": "Chain",
       "progressFO": "Drop",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": ""
     },
     {
@@ -10411,7 +10407,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10423,7 +10419,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10435,7 +10431,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Reject (High Donation)",
       "rpm": "ORANGE"
     },
     {
@@ -10447,7 +10443,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Reject (High Donation)",
       "rpm": "TDT"
     },
     {
@@ -12799,7 +12795,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ERICK"
     },
     {
@@ -13003,7 +12999,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Community rejected",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
     },
     {
@@ -13703,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-14T08:59:54.284Z",
+  "updatedAt": "2026-10-14T09:28:42.900Z",
   "total": 1132
 }
