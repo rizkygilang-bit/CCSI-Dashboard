@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 214
+      "value": 213
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 83
+      "value": 84
     },
     {
       "label": "Ccsi Takeout",
@@ -6085,7 +6085,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Reject (High Donation)",
       "rpm": "PDS"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-15T07:30:09.955Z",
+  "updatedAt": "2026-10-15T08:07:07.985Z",
   "total": 1132
 }
