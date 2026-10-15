@@ -82,11 +82,11 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 186
+      "value": 184
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 152
+      "value": 154
     },
     {
       "label": "Community rejected",
@@ -9435,7 +9435,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10275,7 +10275,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-TRI"
     },
     {
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-15T02:38:15.905Z",
+  "updatedAt": "2026-10-15T03:07:25.042Z",
   "total": 1132
 }
