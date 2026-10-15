@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 213
+      "value": 212
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 84
+      "value": 85
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 88
+        "value": 87
       }
     ],
     "pulling cable": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 7
+        "value": 8
       }
     ]
   },
@@ -9889,7 +9889,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-15T08:07:07.985Z",
+  "updatedAt": "2026-10-15T08:42:26.804Z",
   "total": 1132
 }
