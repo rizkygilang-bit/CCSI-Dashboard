@@ -10,15 +10,15 @@
     },
     {
       "label": "Permit",
-      "value": 212
+      "value": 211
     },
     {
       "label": "Drop",
-      "value": 176
+      "value": 174
     },
     {
       "label": "Pulling Done",
-      "value": 85
+      "value": 88
     },
     {
       "label": "Ccsi Takeout",
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 8
+        "value": 9
       }
     ]
   },
@@ -685,7 +685,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -4561,7 +4561,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -12769,7 +12769,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-15T09:44:12.869Z",
+  "updatedAt": "2026-10-15T10:13:13.974Z",
   "total": 1132
 }
