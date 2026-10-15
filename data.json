@@ -86,19 +86,19 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 150
+      "value": 152
     },
     {
       "label": "Community rejected",
       "value": 22
     },
     {
-      "label": "Permit Start",
-      "value": 14
-    },
-    {
       "label": "Submit PU",
       "value": 13
+    },
+    {
+      "label": "Permit Start",
+      "value": 12
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan); Negotiation",
@@ -10227,7 +10227,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HOTMA"
     },
     {
@@ -10239,7 +10239,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HOTMA"
     },
     {
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-15T02:08:02.339Z",
+  "updatedAt": "2026-10-15T02:38:15.905Z",
   "total": 1132
 }
