@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 207
+      "value": 206
     },
     {
       "label": "Drop",
-      "value": 171
+      "value": 172
     },
     {
       "label": "Pulling Done",
@@ -12397,7 +12397,7 @@
       "kota": "KAB. KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-16T10:11:10.725Z",
+  "updatedAt": "2026-10-16T10:41:00.233Z",
   "total": 1132
 }
