@@ -14,7 +14,7 @@
     },
     {
       "label": "Drop",
-      "value": 174
+      "value": 173
     },
     {
       "label": "Pulling Done",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 9
     }
   ],
   "priority": [
@@ -57,7 +57,7 @@
     "pulling cable": [
       {
         "label": "P3",
-        "value": 1
+        "value": 2
       }
     ],
     "pulling done": [
@@ -12637,7 +12637,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Cable",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-16T08:02:31.261Z",
+  "updatedAt": "2026-10-16T08:40:32.824Z",
   "total": 1132
 }
