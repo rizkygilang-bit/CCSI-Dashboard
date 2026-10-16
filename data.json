@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 211
+      "value": 212
     },
     {
       "label": "Drop",
-      "value": 173
+      "value": 172
     },
     {
       "label": "Pulling Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 87
+        "value": 88
       }
     ],
     "pulling cable": [
@@ -9421,10 +9421,10 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-WJV-0138-H-P",
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-16T08:40:32.824Z",
+  "updatedAt": "2026-10-16T09:11:47.301Z",
   "total": 1132
 }
