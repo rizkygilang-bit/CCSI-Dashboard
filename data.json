@@ -10,15 +10,15 @@
     },
     {
       "label": "Permit",
-      "value": 206
+      "value": 205
     },
     {
       "label": "Drop",
-      "value": 172
+      "value": 171
     },
     {
       "label": "Pulling Done",
-      "value": 94
+      "value": 98
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 9
+      "value": 7
     }
   ],
   "priority": [
@@ -57,7 +57,7 @@
     "pulling cable": [
       {
         "label": "P3",
-        "value": 2
+        "value": 1
       }
     ],
     "pulling done": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 11
+        "value": 12
       }
     ]
   },
@@ -6301,7 +6301,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6937,7 +6937,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -12529,7 +12529,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12637,7 +12637,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-17T10:34:40.006Z",
+  "updatedAt": "2026-10-17T11:01:41.193Z",
   "total": 1132
 }
