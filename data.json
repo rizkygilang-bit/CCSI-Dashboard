@@ -13723,139 +13723,7 @@
       "rpm": ""
     },
     {
-      "siteId": "JAW-WJV-0412-X-B",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "124933105",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "125549110",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
       "siteId": "JAW-WJV-0079-H-B",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "R3271060",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1268292004",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0030-X-F",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200502",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0149-X-P",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200527",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-303",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-380",
       "siteName": "",
       "ranVendor": "",
       "kota": "",
@@ -14107,6 +13975,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-19T11:10:00.392Z",
+  "updatedAt": "2026-10-19T11:39:50.645Z",
   "total": 1132
 }
