@@ -9412,7 +9412,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "ERICK"
     },
     {
       "siteId": "JAW-WJV-0686-H-P",
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-19T08:09:24.271Z",
+  "updatedAt": "2026-10-19T08:46:18.344Z",
   "total": 1132
 }
