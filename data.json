@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 169
+      "value": 170
     },
     {
       "label": "RFS",
@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 205
+      "value": 199
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 98
+      "value": 103
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 87
+        "value": 84
       }
     ],
     "pulling cable": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 12
+        "value": 15
       }
     ]
   },
@@ -4561,7 +4561,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -7309,7 +7309,7 @@
       "kota": "TASIKMALAYA",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8437,7 +8437,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8449,7 +8449,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Issued",
       "rpm": "ERICK"
@@ -9901,7 +9901,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -9913,7 +9913,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9925,7 +9925,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-19T03:21:56.462Z",
+  "updatedAt": "2026-10-19T04:01:53.844Z",
   "total": 1132
 }
