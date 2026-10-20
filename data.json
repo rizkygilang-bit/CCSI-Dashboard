@@ -13697,8 +13697,32 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
+    },
+    {
+      "siteId": "SDA-07-296",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0184-C-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-20T06:45:16.279Z",
+  "updatedAt": "2026-10-20T07:30:59.934Z",
   "total": 1132
 }
