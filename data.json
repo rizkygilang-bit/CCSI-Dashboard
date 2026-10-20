@@ -9460,7 +9460,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": "ORANGE"
     },
     {
       "siteId": "121052104",
@@ -14023,6 +14023,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-20T09:21:21.929Z",
+  "updatedAt": "2026-10-20T09:57:29.835Z",
   "total": 1132
 }
