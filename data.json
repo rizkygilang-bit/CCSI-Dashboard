@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 199
+      "value": 200
     },
     {
       "label": "Drop",
-      "value": 171
+      "value": 170
     },
     {
       "label": "Pulling Done",
@@ -9433,10 +9433,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "ORANGE"
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "123107109",
@@ -9604,7 +9604,7 @@
       "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "1265752003",
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-20T04:40:13.806Z",
+  "updatedAt": "2026-10-20T05:10:11.151Z",
   "total": 1132
 }
