@@ -2,11 +2,11 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 170
+      "value": 182
     },
     {
       "label": "RFS",
-      "value": 309
+      "value": 310
     },
     {
       "label": "Permit",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 103
+      "value": 89
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 7
+      "value": 8
     }
   ],
   "priority": [
@@ -67,14 +67,14 @@
       },
       {
         "label": "P3",
-        "value": 15
+        "value": 14
       }
     ]
   },
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 534
+      "value": 535
     },
     {
       "label": "Site Drop",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 157
+      "value": 156
     },
     {
       "label": "Community rejected",
@@ -685,7 +685,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -6085,7 +6085,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Reject (High Donation)",
       "rpm": "PDS"
@@ -6121,7 +6121,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6157,7 +6157,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -6169,7 +6169,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6193,7 +6193,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6301,7 +6301,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6361,7 +6361,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6373,7 +6373,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6397,7 +6397,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -6433,7 +6433,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -9435,7 +9435,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -11857,7 +11857,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Pulling Cable",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -12529,7 +12529,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12769,7 +12769,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -13697,32 +13697,8 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
-    },
-    {
-      "siteId": "SDA-07-296",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-EJV-0184-C-P",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-20T07:30:59.934Z",
+  "updatedAt": "2026-10-20T08:13:32.418Z",
   "total": 1132
 }
