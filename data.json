@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 532
+      "value": 534
     },
     {
       "label": "Site Drop",
@@ -86,7 +86,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 154
+      "value": 153
     },
     {
       "label": "Community rejected",
@@ -106,7 +106,7 @@
     },
     {
       "label": "Permit Reject (High Donation)",
-      "value": 6
+      "value": 5
     },
     {
       "label": "Permit Issued",
@@ -10263,7 +10263,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Reject (High Donation)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -10287,7 +10287,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -13975,6 +13975,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-20T02:08:02.821Z",
+  "updatedAt": "2026-10-20T02:37:13.573Z",
   "total": 1132
 }
