@@ -9436,7 +9436,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
-      "rpm": "TANG-TRI"
+      "rpm": "ORANGE"
     },
     {
       "siteId": "123107109",
@@ -9472,7 +9472,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "ERICK"
+      "rpm": "ORANGE"
     },
     {
       "siteId": "JAW-WJV-0756-H-P",
@@ -9844,7 +9844,7 @@
       "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "HOTMA"
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "120822109",
@@ -13927,6 +13927,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-21T03:10:42.230Z",
+  "updatedAt": "2026-10-21T03:39:10.263Z",
   "total": 1132
 }
