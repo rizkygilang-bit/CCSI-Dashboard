@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 195
+      "value": 193
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 75
+      "value": 77
     },
     {
       "label": "Ccsi Takeout",
@@ -4597,7 +4597,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -5317,7 +5317,7 @@
       "kota": "Pasuruan",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-21T08:17:00.839Z",
+  "updatedAt": "2026-10-21T09:02:45.414Z",
   "total": 1132
 }
