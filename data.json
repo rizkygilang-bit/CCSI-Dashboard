@@ -14,11 +14,11 @@
     },
     {
       "label": "Drop",
-      "value": 173
+      "value": 171
     },
     {
       "label": "Pulling Done",
-      "value": 84
+      "value": 86
     },
     {
       "label": "Ccsi Takeout",
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 14
+        "value": 16
       }
     ]
   },
@@ -9733,7 +9733,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
@@ -9841,7 +9841,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "TANG-TRI"
@@ -9937,10 +9937,10 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "HOTMA"
+      "rpm": "ERICK"
     },
     {
       "siteId": "1266322001",
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-21T04:13:01.292Z",
+  "updatedAt": "2026-10-21T04:42:34.491Z",
   "total": 1132
 }
