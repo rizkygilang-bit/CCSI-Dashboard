@@ -82,11 +82,11 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 180
+      "value": 176
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 156
+      "value": 160
     },
     {
       "label": "Community rejected",
@@ -9963,7 +9963,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -9987,7 +9987,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -9999,7 +9999,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -10023,7 +10023,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ORANGE"
     },
     {
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-21T09:39:53.975Z",
+  "updatedAt": "2026-10-21T10:13:38.632Z",
   "total": 1132
 }
