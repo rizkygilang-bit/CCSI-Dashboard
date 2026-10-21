@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "Terminasi Done",
-      "value": 187
+      "value": 200
     },
     {
       "label": "RFS",
@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 197
+      "value": 195
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 86
+      "value": 75
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 84
+        "value": 82
       }
     ],
     "pulling cable": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 16
+        "value": 18
       }
     ]
   },
@@ -1621,7 +1621,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HOTMA"
@@ -6985,7 +6985,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HOTMA"
@@ -7525,7 +7525,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7561,7 +7561,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7609,7 +7609,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HOTMA"
@@ -7681,7 +7681,7 @@
       "kota": "KAB. BONDOWOSO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7693,7 +7693,7 @@
       "kota": "Bondowoso",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7705,7 +7705,7 @@
       "kota": "KAB. BONDOWOSO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7717,7 +7717,7 @@
       "kota": "BONDOWOSO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7729,7 +7729,7 @@
       "kota": "KAB. BONDOWOSO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7873,7 +7873,7 @@
       "kota": "Jember",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Submit PU",
       "rpm": "HOTMA"
@@ -7885,7 +7885,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -7897,7 +7897,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -10297,7 +10297,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-TRI"
@@ -10309,7 +10309,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-TRI"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-21T07:33:32.924Z",
+  "updatedAt": "2026-10-21T08:17:00.839Z",
   "total": 1132
 }
