@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 196
+      "value": 204
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 66
+      "value": 68
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 85
+        "value": 83
       }
     ],
     "pulling cable": [
@@ -67,14 +67,14 @@
       },
       {
         "label": "P3",
-        "value": 18
+        "value": 20
       }
     ]
   },
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 535
+      "value": 545
     },
     {
       "label": "Site Drop",
@@ -82,23 +82,23 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 176
+      "value": 173
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 160
+      "value": 153
     },
     {
       "label": "Community rejected",
       "value": 22
     },
     {
-      "label": "Submit PU",
-      "value": 13
+      "label": "Permit Start",
+      "value": 22
     },
     {
-      "label": "Permit Start",
-      "value": 12
+      "label": "Submit PU",
+      "value": 13
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan); Negotiation",
@@ -9481,7 +9481,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -9505,7 +9505,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -9735,7 +9735,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10323,7 +10323,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10335,7 +10335,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10347,7 +10347,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10359,7 +10359,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10371,7 +10371,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10383,7 +10383,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10395,7 +10395,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10407,7 +10407,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10419,7 +10419,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -13697,8 +13697,128 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
+    },
+    {
+      "siteId": "160657104",
+      "siteName": "GIRI",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. BANYUWANGI",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "R3580114",
+      "siteName": "BATURADEN",
+      "ranVendor": "HUAWEI",
+      "kota": "JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "R3580081",
+      "siteName": "GLAGAHWERO",
+      "ranVendor": "HUAWEI",
+      "kota": "JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "E3500464",
+      "siteName": "MAYANG",
+      "ranVendor": "HUAWEI",
+      "kota": "JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "E3500458",
+      "siteName": "JEMBERCITY",
+      "ranVendor": "HUAWEI",
+      "kota": "JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "E3500461",
+      "siteName": "JTC_JEMBER",
+      "ranVendor": "HUAWEI",
+      "kota": "JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "161857109",
+      "siteName": "KEBONSARI 2",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "1657011003",
+      "siteName": "TEGAL BESAR DARUS SHOLAH",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "JMR-07-003",
+      "siteName": "KETING",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. JEMBER",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
+    },
+    {
+      "siteId": "LMJ-07-055",
+      "siteName": "KARANGANYARYOSOWILANGUN",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. LUMAJANG",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-22T07:34:15.167Z",
-  "total": 1132
+  "updatedAt": "2026-10-22T08:19:44.654Z",
+  "total": 1142
 }
