@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 204
+      "value": 201
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 68
+      "value": 71
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 83
+        "value": 82
       }
     ],
     "pulling cable": [
@@ -67,7 +67,7 @@
       },
       {
         "label": "P3",
-        "value": 20
+        "value": 21
       }
     ]
   },
@@ -1177,7 +1177,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -12985,7 +12985,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -13765,7 +13765,7 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-22T09:04:24.437Z",
+  "updatedAt": "2026-10-22T09:41:25.068Z",
   "total": 1142
 }
