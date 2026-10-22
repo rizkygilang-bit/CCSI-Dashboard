@@ -6,11 +6,11 @@
     },
     {
       "label": "Permit",
-      "value": 194
+      "value": 197
     },
     {
       "label": "Drop",
-      "value": 169
+      "value": 166
     },
     {
       "label": "Terminasi Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 82
+        "value": 85
       }
     ],
     "pulling cable": [
@@ -10441,7 +10441,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit Reject (High Donation)",
       "rpm": "TDT"
@@ -10453,7 +10453,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "TDT"
@@ -10465,7 +10465,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "TDT"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-22T04:38:08.250Z",
+  "updatedAt": "2026-10-22T05:13:24.494Z",
   "total": 1132
 }
