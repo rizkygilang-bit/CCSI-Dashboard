@@ -10,11 +10,11 @@
     },
     {
       "label": "Permit",
-      "value": 193
+      "value": 194
     },
     {
       "label": "Drop",
-      "value": 171
+      "value": 169
     },
     {
       "label": "Pulling Done",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 9
     }
   ],
   "priority": [
@@ -12613,7 +12613,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -12997,7 +12997,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Cable",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -13697,8 +13697,56 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
+    },
+    {
+      "siteId": "160365102",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "KPN-07-086",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "KPN-07-158",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "164117107",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-22T03:25:43.882Z",
+  "updatedAt": "2026-10-22T04:01:34.435Z",
   "total": 1132
 }
