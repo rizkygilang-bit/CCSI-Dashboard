@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 197
+      "value": 196
     },
     {
       "label": "Drop",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 9
+      "value": 10
     }
   ],
   "priority": [
@@ -6349,7 +6349,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Cable",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -13699,6 +13699,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-22T06:53:11.141Z",
+  "updatedAt": "2026-10-22T07:34:15.167Z",
   "total": 1132
 }
