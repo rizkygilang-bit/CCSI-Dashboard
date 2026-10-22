@@ -6,11 +6,11 @@
     },
     {
       "label": "Permit",
-      "value": 201
+      "value": 200
     },
     {
       "label": "Drop",
-      "value": 166
+      "value": 167
     },
     {
       "label": "Terminasi Done",
@@ -51,7 +51,7 @@
       },
       {
         "label": "P3",
-        "value": 82
+        "value": 79
       }
     ],
     "pulling cable": [
@@ -1321,7 +1321,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -6841,7 +6841,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -9661,7 +9661,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -9673,7 +9673,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -9685,7 +9685,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HOTMA"
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-22T10:58:02.561Z",
+  "updatedAt": "2026-10-22T11:24:38.893Z",
   "total": 1142
 }
