@@ -10,11 +10,11 @@
     },
     {
       "label": "Drop",
-      "value": 169
+      "value": 168
     },
     {
       "label": "Terminasi Done",
-      "value": 157
+      "value": 158
     },
     {
       "label": "Pulling Done",
@@ -12901,7 +12901,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -13927,6 +13927,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-23T06:10:24.503Z",
+  "updatedAt": "2026-10-23T06:46:15.549Z",
   "total": 1142
 }
