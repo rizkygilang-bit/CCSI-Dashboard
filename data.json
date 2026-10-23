@@ -6,11 +6,11 @@
     },
     {
       "label": "Permit",
-      "value": 200
+      "value": 199
     },
     {
       "label": "Drop",
-      "value": 167
+      "value": 169
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 71
+      "value": 70
     },
     {
       "label": "Ccsi Takeout",
@@ -6841,7 +6841,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -6937,7 +6937,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-23T03:26:25.656Z",
+  "updatedAt": "2026-10-23T04:00:23.292Z",
   "total": 1142
 }
