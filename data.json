@@ -13817,8 +13817,116 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
+    },
+    {
+      "siteId": "120303109",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1269522004",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "BDG-05-202",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-WJV-0021-F-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-WJV-0810-H-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-WJV-0821-H-P",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "SOR-05-002",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "SOR-05-058",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "TBG05_WJ019",
+      "siteName": "",
+      "ranVendor": "",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-23T04:00:23.292Z",
+  "updatedAt": "2026-10-23T04:37:14.921Z",
   "total": 1142
 }
