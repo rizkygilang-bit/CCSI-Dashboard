@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 547
+      "value": 556
     },
     {
       "label": "Site Drop",
@@ -82,11 +82,11 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 172
+      "value": 165
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 152
+      "value": 151
     },
     {
       "label": "Community rejected",
@@ -94,7 +94,7 @@
     },
     {
       "label": "Permit Start",
-      "value": 22
+      "value": 21
     },
     {
       "label": "Submit PU",
@@ -8511,7 +8511,7 @@
       "topology": "Star",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -8655,7 +8655,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -9123,7 +9123,7 @@
       "topology": "Chain",
       "progressFO": "Pulling Done",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -12159,7 +12159,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -12483,7 +12483,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -12543,7 +12543,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -12747,7 +12747,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -12891,7 +12891,7 @@
       "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -13683,7 +13683,7 @@
       "topology": "Star",
       "progressFO": "Pulling Done",
       "custPrio": "",
-      "permitStatus": "Permit Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T02:40:31.317Z",
+  "updatedAt": "2026-10-26T03:14:19.904Z",
   "total": 1142
 }
