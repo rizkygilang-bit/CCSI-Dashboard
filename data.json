@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 198
+      "value": 197
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 67
+      "value": 68
     },
     {
       "label": "Ccsi Takeout",
@@ -13777,7 +13777,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T04:24:07.646Z",
+  "updatedAt": "2026-10-26T05:02:52.737Z",
   "total": 1142
 }
