@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 190
+      "value": 189
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 73
+      "value": 74
     },
     {
       "label": "Ccsi Takeout",
@@ -47,7 +47,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 79
+        "value": 78
       }
     ],
     "pulling cable": [
@@ -63,7 +63,7 @@
       },
       {
         "label": "P3",
-        "value": 22
+        "value": 23
       }
     ]
   },
@@ -7989,7 +7989,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-DTE"
@@ -13815,6 +13815,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T06:14:16.887Z",
+  "updatedAt": "2026-10-26T07:01:32.979Z",
   "total": 1142
 }
