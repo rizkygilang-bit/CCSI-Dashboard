@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 197
+      "value": 190
     },
     {
       "label": "Drop",
@@ -14,11 +14,11 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 136
+      "value": 138
     },
     {
       "label": "Pulling Done",
-      "value": 68
+      "value": 73
     },
     {
       "label": "Ccsi Takeout",
@@ -46,28 +46,24 @@
   "priorityByStatus": {
     "permit": [
       {
-        "label": "P2",
-        "value": 2
-      },
-      {
         "label": "P3",
         "value": 79
       }
     ],
     "pulling cable": [
       {
-        "label": "P3",
+        "label": "P2",
         "value": 1
       }
     ],
     "pulling done": [
       {
         "label": "P2",
-        "value": 2
+        "value": 3
       },
       {
         "label": "P3",
-        "value": 21
+        "value": 22
       }
     ]
   },
@@ -4525,7 +4521,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -4537,7 +4533,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ACI"
@@ -6697,7 +6693,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-DTE"
@@ -11869,7 +11865,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P2",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TDT"
@@ -11881,7 +11877,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Cable",
       "custPrio": "P2",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TDT"
@@ -13705,7 +13701,7 @@
       "kota": "KAB. BANYUWANGI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13717,7 +13713,7 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13753,7 +13749,7 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13819,6 +13815,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T05:02:52.737Z",
+  "updatedAt": "2026-10-26T05:40:52.098Z",
   "total": 1142
 }
