@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 545
+      "value": 547
     },
     {
       "label": "Site Drop",
@@ -82,11 +82,11 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 173
+      "value": 172
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 153
+      "value": 152
     },
     {
       "label": "Community rejected",
@@ -9891,7 +9891,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9915,7 +9915,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T02:04:00.813Z",
+  "updatedAt": "2026-10-26T02:40:31.317Z",
   "total": 1142
 }
