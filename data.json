@@ -74,7 +74,7 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 556
+      "value": 562
     },
     {
       "label": "Site Drop",
@@ -82,11 +82,11 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 165
+      "value": 160
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 151
+      "value": 150
     },
     {
       "label": "Community rejected",
@@ -9579,7 +9579,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -9591,7 +9591,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -9603,7 +9603,7 @@
       "topology": "Ring",
       "progressFO": "Drop",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -9759,7 +9759,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -10191,7 +10191,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -10275,7 +10275,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
     },
     {
@@ -13819,6 +13819,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-26T03:14:19.904Z",
+  "updatedAt": "2026-10-26T03:48:29.388Z",
   "total": 1142
 }
