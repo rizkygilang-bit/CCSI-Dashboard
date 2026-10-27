@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 74
+      "value": 75
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 10
+      "value": 9
     }
   ],
   "priority": [
@@ -50,16 +50,11 @@
         "value": 78
       }
     ],
-    "pulling cable": [
-      {
-        "label": "P2",
-        "value": 1
-      }
-    ],
+    "pulling cable": [],
     "pulling done": [
       {
         "label": "P2",
-        "value": 3
+        "value": 4
       },
       {
         "label": "P3",
@@ -11877,7 +11872,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "P2",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TDT"
@@ -13815,6 +13810,6 @@
       "rpm": "Hotma"
     }
   ],
-  "updatedAt": "2026-10-27T03:59:34.776Z",
+  "updatedAt": "2026-10-27T04:28:57.350Z",
   "total": 1142
 }
