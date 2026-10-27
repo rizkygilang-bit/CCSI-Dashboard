@@ -6,7 +6,7 @@
     },
     {
       "label": "Permit",
-      "value": 189
+      "value": 202
     },
     {
       "label": "Drop",
@@ -18,11 +18,11 @@
     },
     {
       "label": "Pulling Done",
-      "value": 75
+      "value": 76
     },
     {
       "label": "Ccsi Takeout",
-      "value": 173
+      "value": 170
     },
     {
       "label": "Pulling Cable",
@@ -47,7 +47,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 78
+        "value": 77
       }
     ],
     "pulling cable": [],
@@ -58,7 +58,7 @@
       },
       {
         "label": "P3",
-        "value": 23
+        "value": 24
       }
     ]
   },
@@ -80,12 +80,12 @@
       "value": 150
     },
     {
-      "label": "Community rejected",
-      "value": 22
+      "label": "Permit Start",
+      "value": 32
     },
     {
-      "label": "Permit Start",
-      "value": 21
+      "label": "Community rejected",
+      "value": 22
     },
     {
       "label": "Submit PU",
@@ -9436,7 +9436,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -9592,7 +9592,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
@@ -10156,7 +10156,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "TANG-TRI"
@@ -12436,10 +12436,10 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Site Drop",
-      "rpm": ""
+      "rpm": "HAMZAH"
     },
     {
       "siteId": "JAW-EJV-0210-X-B",
@@ -12448,10 +12448,10 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Site Drop",
-      "rpm": ""
+      "rpm": "HAMZAH"
     },
     {
       "siteId": "162616126",
@@ -13024,10 +13024,10 @@
       "kota": "KAB. KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Site Drop",
-      "rpm": ""
+      "rpm": "HAMZAH"
     },
     {
       "siteId": "TBG06_EJ039",
@@ -13808,8 +13808,140 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
+    },
+    {
+      "siteId": "JAW-EJV-0144-X-P",
+      "siteName": "SRI GADING",
+      "ranVendor": "HUAWEI",
+      "kota": "KOTA MALANG",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "1231421003",
+      "siteName": "DESA PARUNGKUDA - RELOC",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. SUKABUMI",
+      "province": "JAWA BARAT",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "ERICK"
+    },
+    {
+      "siteId": "R3270525",
+      "siteName": "GANDASOLI CIREUNGHAS",
+      "ranVendor": "HUAWEI",
+      "kota": "SUKABUMI",
+      "province": "JAWA BARAT",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "ERICK"
+    },
+    {
+      "siteId": "R3200009",
+      "siteName": "KARANG TENGAH SUKABUMI",
+      "ranVendor": "HUAWEI",
+      "kota": "SUKABUMI",
+      "province": "JAWA BARAT",
+      "topology": "Star",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "ERICK"
+    },
+    {
+      "siteId": "E3500117",
+      "siteName": "DOKO_GAMPENGREJO",
+      "ranVendor": "HUAWEI",
+      "kota": "KEDIRI",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "E3500118",
+      "siteName": "KATANG",
+      "ranVendor": "HUAWEI",
+      "kota": "KEDIRI",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "R3580480",
+      "siteName": "NGASEM",
+      "ranVendor": "HUAWEI",
+      "kota": "KEDIRI",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "R3350143",
+      "siteName": "TANJUNG REJO",
+      "ranVendor": "HUAWEI",
+      "kota": "KOTA MALANG",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "E3500239",
+      "siteName": "GADANG",
+      "ranVendor": "HUAWEI",
+      "kota": "KOTA MALANG",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
+    },
+    {
+      "siteId": "1263621023",
+      "siteName": "PARUNG KUDA SUKABUMI",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. SUKABUMI",
+      "province": "JAWA BARAT",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "ERICK"
+    },
+    {
+      "siteId": "JAW-WJV-0643-I-B",
+      "siteName": "CIPURUT",
+      "ranVendor": "HUAWEI",
+      "kota": "SUKABUMI",
+      "province": "JAWA BARAT",
+      "topology": "Chain",
+      "progressFO": "Permit",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-10-27T04:28:57.350Z",
-  "total": 1142
+  "updatedAt": "2026-10-27T05:04:17.954Z",
+  "total": 1153
 }
