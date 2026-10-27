@@ -6,11 +6,11 @@
     },
     {
       "label": "Drop",
-      "value": 168
+      "value": 166
     },
     {
       "label": "Permit",
-      "value": 202
+      "value": 199
     },
     {
       "label": "Terminasi Done",
@@ -22,11 +22,15 @@
     },
     {
       "label": "Ccsi Takeout",
-      "value": 170
+      "value": 158
     },
     {
       "label": "Pulling Cable",
       "value": 9
+    },
+    {
+      "label": "DRM",
+      "value": 66
     }
   ],
   "priority": [
@@ -47,7 +51,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 77
+        "value": 74
       }
     ],
     "pulling cable": [],
@@ -68,12 +72,12 @@
       "value": 562
     },
     {
-      "label": "Site Drop",
-      "value": 199
+      "label": "Permit NY Start",
+      "value": 219
     },
     {
-      "label": "Permit NY Start",
-      "value": 160
+      "label": "Site Drop",
+      "value": 187
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
@@ -81,7 +85,7 @@
     },
     {
       "label": "Permit Start",
-      "value": 33
+      "value": 36
     },
     {
       "label": "Community rejected",
@@ -97,7 +101,7 @@
     },
     {
       "label": "Permit Reject (High Donation)",
-      "value": 5
+      "value": 4
     },
     {
       "label": "Permit Issued",
@@ -10432,9 +10436,9 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Permit Reject (High Donation)",
+      "permitStatus": "Permit Start",
       "rpm": "TDT"
     },
     {
@@ -10444,9 +10448,9 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Start",
       "rpm": "TDT"
     },
     {
@@ -10456,9 +10460,9 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Start",
       "rpm": "TDT"
     },
     {
@@ -10468,10 +10472,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "DRM",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "TDT"
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-303",
@@ -10492,10 +10496,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "DRM",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": "TDT"
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0324-M-P",
@@ -11320,10 +11324,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "R3270179",
@@ -11404,10 +11408,10 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "124079109",
@@ -11416,10 +11420,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0097-H-B",
@@ -11428,10 +11432,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "124073109",
@@ -11440,10 +11444,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "SOR-05-229",
@@ -11452,10 +11456,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1269482004",
@@ -11536,10 +11540,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "T000337",
@@ -11632,10 +11636,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0406-U-P",
@@ -11716,10 +11720,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "P3",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "TBG05_WJ025",
@@ -11728,10 +11732,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "124139126",
@@ -11740,10 +11744,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-141",
@@ -12040,10 +12044,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "Site Drop",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "GTI19JB034",
@@ -13960,10 +13964,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "E3200737",
@@ -13972,10 +13976,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0444-M-P",
@@ -13984,10 +13988,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0506-U-P",
@@ -13996,10 +14000,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "122862109",
@@ -14008,10 +14012,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1271282004",
@@ -14020,10 +14024,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1270012004",
@@ -14032,10 +14036,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1260671023",
@@ -14044,10 +14048,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "120081109",
@@ -14056,10 +14060,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "125137126",
@@ -14068,10 +14072,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0241-X-P",
@@ -14080,10 +14084,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0285-H-P",
@@ -14092,10 +14096,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "TBG03_WJ266",
@@ -14104,10 +14108,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "E3200558",
@@ -14116,10 +14120,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0547-U-P",
@@ -14128,10 +14132,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0300-U-P",
@@ -14140,10 +14144,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-006",
@@ -14152,10 +14156,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-311",
@@ -14164,10 +14168,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0195-X-P",
@@ -14176,10 +14180,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "122388109",
@@ -14188,10 +14192,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "120843104",
@@ -14200,10 +14204,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0079-T-B",
@@ -14212,10 +14216,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0069-U-P",
@@ -14224,10 +14228,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-125",
@@ -14236,10 +14240,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0064-T-B",
@@ -14248,10 +14252,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "123176109",
@@ -14260,10 +14264,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0193-H-B",
@@ -14272,10 +14276,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "BDG-05-184",
@@ -14284,10 +14288,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "1259852001",
@@ -14296,10 +14300,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "JAW-WJV-0143-T-B",
@@ -14308,10 +14312,10 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "CAO"
     },
     {
       "siteId": "1222141004",
@@ -14320,10 +14324,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0484-X-B",
@@ -14332,10 +14336,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0505-X-B",
@@ -14344,10 +14348,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1274411023",
@@ -14356,10 +14360,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "122225109",
@@ -14368,10 +14372,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0096-H-B",
@@ -14380,10 +14384,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0369-M-P",
@@ -14392,10 +14396,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0278-M-P",
@@ -14404,10 +14408,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "SOR-05-006",
@@ -14416,10 +14420,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "TBG05_WJ040",
@@ -14428,10 +14432,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "TBG05_WJ041",
@@ -14440,10 +14444,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0404-H-B",
@@ -14452,10 +14456,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "ID-JB-13014",
@@ -14464,10 +14468,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "R3270307",
@@ -14476,10 +14480,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "R3270749",
@@ -14488,10 +14492,10 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "125934123",
@@ -14500,10 +14504,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "125829103",
@@ -14512,10 +14516,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "1259782001",
@@ -14524,10 +14528,10 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     },
     {
       "siteId": "JAW-WJV-0784-H-P",
@@ -14536,12 +14540,12 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "",
+      "progressFO": "DRM",
       "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-27T06:54:01.839Z",
-  "total": 1154
+  "updatedAt": "2026-10-27T07:36:25.822Z",
+  "total": 1203
 }
