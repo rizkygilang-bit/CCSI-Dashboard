@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 77
+      "value": 78
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 9
+      "value": 8
     },
     {
       "label": "DRM",
@@ -7076,7 +7076,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -14546,6 +14546,6 @@
       "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-27T07:36:25.822Z",
+  "updatedAt": "2026-10-27T08:21:11.281Z",
   "total": 1203
 }
