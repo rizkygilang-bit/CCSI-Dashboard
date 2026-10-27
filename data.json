@@ -14,7 +14,7 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 138
+      "value": 139
     },
     {
       "label": "Pulling Done",
@@ -26,11 +26,11 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 7
     },
     {
       "label": "DRM",
-      "value": 66
+      "value": 67
     }
   ],
   "priority": [
@@ -62,7 +62,7 @@
       },
       {
         "label": "P3",
-        "value": 24
+        "value": 23
       }
     ]
   },
@@ -85,7 +85,7 @@
     },
     {
       "label": "Permit Start",
-      "value": 36
+      "value": 37
     },
     {
       "label": "Community rejected",
@@ -12716,7 +12716,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12992,7 +12992,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -14544,8 +14544,20 @@
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
+    },
+    {
+      "siteId": "R3580450",
+      "siteName": "GRIYA SHANTA",
+      "ranVendor": "HUAWEI",
+      "kota": "KOTA MALANG",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "DRM",
+      "custPrio": "",
+      "permitStatus": "Permit Start",
+      "rpm": "Hamzah"
     }
   ],
-  "updatedAt": "2026-10-27T08:21:11.281Z",
-  "total": 1203
+  "updatedAt": "2026-10-27T09:06:41.602Z",
+  "total": 1204
 }
