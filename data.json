@@ -14,11 +14,11 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 139
+      "value": 140
     },
     {
       "label": "Pulling Done",
-      "value": 77
+      "value": 78
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 8
+      "value": 6
     },
     {
       "label": "DRM",
@@ -2768,7 +2768,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
@@ -6344,7 +6344,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -14570,6 +14570,6 @@
       "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-28T07:31:55.877Z",
+  "updatedAt": "2026-10-28T08:25:40.917Z",
   "total": 1205
 }
