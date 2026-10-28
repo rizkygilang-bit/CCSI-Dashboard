@@ -6,11 +6,11 @@
     },
     {
       "label": "Drop",
-      "value": 163
+      "value": 161
     },
     {
       "label": "Permit",
-      "value": 201
+      "value": 203
     },
     {
       "label": "Terminasi Done",
@@ -51,7 +51,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 74
+        "value": 76
       }
     ],
     "pulling cable": [],
@@ -69,11 +69,11 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 562
+      "value": 566
     },
     {
       "label": "Permit NY Start",
-      "value": 220
+      "value": 217
     },
     {
       "label": "Site Drop",
@@ -81,7 +81,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 150
+      "value": 149
     },
     {
       "label": "Permit Start",
@@ -5504,9 +5504,9 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -5638,7 +5638,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -6610,7 +6610,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -6656,7 +6656,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -8350,7 +8350,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
     },
     {
@@ -15902,6 +15902,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-28T09:58:56.649Z",
+  "updatedAt": "2026-10-28T10:38:11.407Z",
   "total": 1205
 }
