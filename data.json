@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "RFS",
-      "value": 390
+      "value": 391
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 78
+      "value": 77
     },
     {
       "label": "Ccsi Takeout",
@@ -62,7 +62,7 @@
       },
       {
         "label": "P3",
-        "value": 23
+        "value": 22
       }
     ]
   },
@@ -3002,7 +3002,7 @@
       "rpm": "HAMZAH"
     },
     {
-      "siteId": "161821109",
+      "siteId": "JAW-EJV-0079-I-P",
       "siteName": "Jabung",
       "ranVendor": "HUAWEI",
       "kota": "Malang",
@@ -12632,7 +12632,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -14570,6 +14570,6 @@
       "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-28T04:21:24.838Z",
+  "updatedAt": "2026-10-28T05:09:00.443Z",
   "total": 1205
 }
