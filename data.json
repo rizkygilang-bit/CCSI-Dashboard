@@ -6,7 +6,7 @@
     },
     {
       "label": "Drop",
-      "value": 164
+      "value": 163
     },
     {
       "label": "Permit",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 7
+      "value": 8
     },
     {
       "label": "DRM",
@@ -2768,7 +2768,7 @@
       "kota": "KAB. GRESIK",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Cable",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "ERICK"
@@ -14570,6 +14570,6 @@
       "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-28T06:27:51.749Z",
+  "updatedAt": "2026-10-28T07:31:55.877Z",
   "total": 1205
 }
