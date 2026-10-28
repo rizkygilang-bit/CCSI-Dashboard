@@ -6,11 +6,11 @@
     },
     {
       "label": "Drop",
-      "value": 166
+      "value": 164
     },
     {
       "label": "Permit",
-      "value": 199
+      "value": 201
     },
     {
       "label": "Terminasi Done",
@@ -30,7 +30,7 @@
     },
     {
       "label": "DRM",
-      "value": 67
+      "value": 68
     }
   ],
   "priority": [
@@ -73,7 +73,7 @@
     },
     {
       "label": "Permit NY Start",
-      "value": 219
+      "value": 220
     },
     {
       "label": "Site Drop",
@@ -1304,7 +1304,7 @@
       "kota": "KAB. BLITAR",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -3212,7 +3212,7 @@
       "kota": "KAB. BLITAR",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -14556,8 +14556,20 @@
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
+    },
+    {
+      "siteId": "121304104",
+      "siteName": "PSR_RAJAMANDLA",
+      "ranVendor": "HUAWEI",
+      "kota": "KAB. BANDUNG BARAT",
+      "province": "JAWA BARAT",
+      "topology": "Chain",
+      "progressFO": "DRM",
+      "custPrio": "",
+      "permitStatus": "Permit NY Start",
+      "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-10-28T03:31:21.715Z",
-  "total": 1204
+  "updatedAt": "2026-10-28T04:21:24.838Z",
+  "total": 1205
 }
