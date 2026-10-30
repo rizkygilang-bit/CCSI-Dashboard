@@ -14,11 +14,11 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 141
+      "value": 142
     },
     {
       "label": "Pulling Done",
-      "value": 84
+      "value": 83
     },
     {
       "label": "Ccsi Takeout",
@@ -5312,7 +5312,7 @@
       "kota": "Pasuruan",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -15146,6 +15146,6 @@
       "rpm": ""
     }
   ],
-  "updatedAt": "2026-10-30T07:28:54.188Z",
+  "updatedAt": "2026-10-30T14:26:43.764Z",
   "total": 1205
 }
