@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 196
+      "value": 193
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 83
+      "value": 88
     },
     {
       "label": "Ccsi Takeout",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Pulling Cable",
-      "value": 6
+      "value": 4
     },
     {
       "label": "DRM",
@@ -51,7 +51,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 71
+        "value": 70
       }
     ],
     "pulling cable": [],
@@ -62,7 +62,7 @@
       },
       {
         "label": "P3",
-        "value": 27
+        "value": 28
       }
     ]
   },
@@ -5264,7 +5264,7 @@
       "kota": "MOJOKERTO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ACI"
@@ -5432,7 +5432,7 @@
       "kota": "Sidoarjo",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ACI"
@@ -8072,7 +8072,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -10268,7 +10268,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
@@ -11852,7 +11852,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Cable",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
@@ -14568,584 +14568,8 @@
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
-    },
-    {
-      "siteId": "JAW-WJV-0404-H-B",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1269302003",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1259782001",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "125137126",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0784-H-P",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "122225109",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "121304104",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-380",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-184",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0143-T-B",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-311",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-125",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-006",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0069-U-P",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0300-U-P",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-261",
-      "siteName": "Huawei",
-      "ranVendor": "DROP",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0573-M-P",
-      "siteName": "Huawei",
-      "ranVendor": "DROP",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200737",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200512",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "TBG03_WJ280",
-      "siteName": "Huawei",
-      "ranVendor": "DROP",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200527",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3200502",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1233911026",
-      "siteName": "Huawei",
-      "ranVendor": "DROP",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "BDG-05-084",
-      "siteName": "Huawei",
-      "ranVendor": "DROP",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "R3580450",
-      "siteName": "Huawei",
-      "ranVendor": "1. DRM",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0354-U-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0136-T-B",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0498-X-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0496-X-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0327-M-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0542-U-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "122403109",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "124084109",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "124100109",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "120331109",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "NPH-05-004",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "TBG03_WJ257",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0016-Y-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1270022004",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1268942003",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-WJV-0974-H-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "120491109",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "1270042004",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "124973103",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "E3500239",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "R3350143",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "JAW-EJV-0144-X-P",
-      "siteName": "Huawei",
-      "ranVendor": "4. Permit",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
-    },
-    {
-      "siteId": "pak sorry this from pak andy, need help give plan when finish termination for this site, max 11 am tommorow,,,thanks pak🙏",
-      "siteName": "",
-      "ranVendor": "",
-      "kota": "",
-      "province": "",
-      "topology": "",
-      "progressFO": "",
-      "custPrio": "",
-      "permitStatus": "",
-      "rpm": ""
     }
   ],
-  "updatedAt": "2026-11-02T01:59:09.150Z",
+  "updatedAt": "2026-11-02T09:12:22.550Z",
   "total": 1205
 }
