@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 174
+      "value": 170
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 71
+      "value": 75
     },
     {
       "label": "Ccsi Takeout",
@@ -51,7 +51,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 68
+        "value": 67
       }
     ],
     "pulling cable": [],
@@ -62,7 +62,7 @@
       },
       {
         "label": "P3",
-        "value": 26
+        "value": 27
       }
     ]
   },
@@ -10352,7 +10352,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -11768,7 +11768,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "TDT"
@@ -11780,7 +11780,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "TDT"
@@ -12956,7 +12956,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "ACI"
@@ -14570,6 +14570,6 @@
       "rpm": "PDS"
     }
   ],
-  "updatedAt": "2026-11-03T08:33:30.674Z",
+  "updatedAt": "2026-11-03T16:30:49.093Z",
   "total": 1205
 }
