@@ -6,7 +6,7 @@
     },
     {
       "label": "Drop",
-      "value": 176
+      "value": 175
     },
     {
       "label": "Permit",
@@ -14,7 +14,7 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 163
+      "value": 164
     },
     {
       "label": "Pulling Done",
@@ -4580,7 +4580,7 @@
       "kota": "KAB. PASURUAN",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Pulling Done",
+      "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ACI"
@@ -13676,7 +13676,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "ERICK"
@@ -14568,8 +14568,188 @@
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
+    },
+    {
+      "siteId": "1642602003",
+      "siteName": "TBG_SIDOKERTO_SIDOARJO",
+      "ranVendor": "35SDA_0187",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1655231003",
+      "siteName": "TBG_TAMAN_SEPANJANG",
+      "ranVendor": "35SDA_0146",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "SDA-07-036",
+      "siteName": "DMT_GANGGANGPANJANG",
+      "ranVendor": "35SDA_0313",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1647142003",
+      "siteName": "TBG_SAMBIROTO",
+      "ranVendor": "35SDA_0166",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "R3580720",
+      "siteName": "CMI_CELEP_SIDOARJO",
+      "ranVendor": "35SDA_0309",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0197-M-P",
+      "siteName": "PTI_CANDI",
+      "ranVendor": "35SDA_0373",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0382-I-B",
+      "siteName": "PTI_SEDURI_DELIK",
+      "ranVendor": "35SDA_0112",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "160053109",
+      "siteName": "TBG_JIKEN_ANTARA_TULANGAN_TANGGULANGIN",
+      "ranVendor": "35SDA_0227",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0237-M-P",
+      "siteName": "PTI_PANGKEMIRI",
+      "ranVendor": "35SDA_0296",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "160072109",
+      "siteName": "TBG_DELTASARI_INDAH",
+      "ranVendor": "35SDA_0036",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "SDA-07-044",
+      "siteName": "DMT_CITRA_ALAMANDA",
+      "ranVendor": "35SDA_0315",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "161884109",
+      "siteName": "TBG_NUSANTARA_3",
+      "ranVendor": "35SDA_0198",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "JAW-EJV-0263-X-P",
+      "siteName": "PTI_GEDANGAN_SIDOARJO",
+      "ranVendor": "35SDA_0043",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "1648952007",
+      "siteName": "TBG_PABEAN",
+      "ranVendor": "35SDA_0347",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
+    },
+    {
+      "siteId": "162693109",
+      "siteName": "TBG_RAYABANDARAJUANDA2TBG",
+      "ranVendor": "35SDA_0047",
+      "kota": "",
+      "province": "",
+      "topology": "",
+      "progressFO": "",
+      "custPrio": "",
+      "permitStatus": "",
+      "rpm": ""
     }
   ],
-  "updatedAt": "2026-11-04T01:57:09.056Z",
+  "updatedAt": "2026-11-04T08:33:20.808Z",
   "total": 1205
 }
