@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 166
+      "value": 163
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 77
+      "value": 81
     },
     {
       "label": "Ccsi Takeout",
@@ -69,11 +69,11 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 566
+      "value": 569
     },
     {
       "label": "Permit NY Start",
-      "value": 218
+      "value": 219
     },
     {
       "label": "Site Drop",
@@ -81,7 +81,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 149
+      "value": 146
     },
     {
       "label": "Permit Start",
@@ -3838,7 +3838,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "CAO"
     },
     {
@@ -3874,7 +3874,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "CAO"
     },
     {
@@ -3886,7 +3886,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "CAO"
     },
     {
@@ -4916,7 +4916,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan); Negotiation",
       "rpm": "ACI"
@@ -13724,7 +13724,7 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13736,7 +13736,7 @@
       "kota": "JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -14580,8 +14580,20 @@
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "ACI"
+    },
+    {
+      "siteId": "KCP Sb Demak 60173A",
+      "siteName": "KCP Sb Demak 60173A",
+      "ranVendor": "HUAWEI",
+      "kota": "KOTA SURABAYA",
+      "province": "JAWA TIMUR",
+      "topology": "Ring",
+      "progressFO": "Pulling Done",
+      "custPrio": "",
+      "permitStatus": "Permit NY Start",
+      "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-05T02:23:46.347Z",
-  "total": 1206
+  "updatedAt": "2026-11-05T09:41:06.002Z",
+  "total": 1207
 }
