@@ -6,23 +6,19 @@
     },
     {
       "label": "Drop",
-      "value": 177
+      "value": 364
     },
     {
       "label": "Permit",
-      "value": 163
+      "value": 160
     },
     {
       "label": "Terminasi Done",
-      "value": 164
+      "value": 165
     },
     {
       "label": "Pulling Done",
-      "value": 81
-    },
-    {
-      "label": "Ccsi Takeout",
-      "value": 158
+      "value": 84
     },
     {
       "label": "Pulling Cable",
@@ -30,7 +26,7 @@
     },
     {
       "label": "DRM",
-      "value": 69
+      "value": 39
     }
   ],
   "priority": [
@@ -51,7 +47,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 66
+        "value": 64
       }
     ],
     "pulling cable": [],
@@ -62,7 +58,7 @@
       },
       {
         "label": "P3",
-        "value": 28
+        "value": 29
       }
     ]
   },
@@ -1340,7 +1336,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": ""
@@ -1364,7 +1360,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": ""
@@ -3716,7 +3712,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -3752,7 +3748,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": ""
@@ -3764,7 +3760,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -3860,10 +3856,10 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
-      "rpm": ""
+      "rpm": "ACI"
     },
     {
       "siteId": "JAW-WJV-0821-H-P",
@@ -4028,7 +4024,7 @@
       "kota": "Kota Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4040,7 +4036,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4052,7 +4048,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4112,7 +4108,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4124,7 +4120,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4136,7 +4132,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4148,7 +4144,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -4256,7 +4252,7 @@
       "kota": "Sidoarjo",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": ""
@@ -7244,7 +7240,7 @@
       "kota": "Kota Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9140,7 +9136,7 @@
       "kota": "",
       "province": "DKI JAKARTA",
       "topology": "",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9152,7 +9148,7 @@
       "kota": "",
       "province": "DKI JAKARTA",
       "topology": "",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9164,7 +9160,7 @@
       "kota": "",
       "province": "DKI JAKARTA",
       "topology": "",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9176,7 +9172,7 @@
       "kota": "",
       "province": "DKI JAKARTA",
       "topology": "",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9188,7 +9184,7 @@
       "kota": "KAB. KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9200,7 +9196,7 @@
       "kota": "Bogor",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9212,7 +9208,7 @@
       "kota": "KAB. PURWAKARTA",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9224,7 +9220,7 @@
       "kota": "KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9236,7 +9232,7 @@
       "kota": "KAB. KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9248,7 +9244,7 @@
       "kota": "KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9260,7 +9256,7 @@
       "kota": "KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9272,7 +9268,7 @@
       "kota": "KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9284,7 +9280,7 @@
       "kota": "KAB. SUBANG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9296,7 +9292,7 @@
       "kota": "KAB. KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9308,7 +9304,7 @@
       "kota": "Purwakarta",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9320,7 +9316,7 @@
       "kota": "KAB. KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9332,7 +9328,7 @@
       "kota": "KAB. PURWAKARTA",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9344,7 +9340,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9356,7 +9352,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9368,7 +9364,7 @@
       "kota": "KAB. CIAMIS",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9452,7 +9448,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ORANGE"
@@ -9788,7 +9784,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9800,7 +9796,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -9812,7 +9808,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10076,7 +10072,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10088,7 +10084,7 @@
       "kota": "PURWAKARTA",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10124,7 +10120,7 @@
       "kota": "KAB. CIAMIS",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10136,7 +10132,7 @@
       "kota": "KAB. BEKASI",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10148,7 +10144,7 @@
       "kota": "KOTA BEKASI",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10496,7 +10492,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -10724,7 +10720,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10736,7 +10732,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10748,7 +10744,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10760,7 +10756,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10772,7 +10768,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10784,7 +10780,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10796,7 +10792,7 @@
       "kota": "BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10808,7 +10804,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10820,7 +10816,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10832,7 +10828,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10844,7 +10840,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10856,7 +10852,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10868,7 +10864,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10880,7 +10876,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10892,7 +10888,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10904,7 +10900,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10916,7 +10912,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10928,7 +10924,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -10988,7 +10984,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11000,7 +10996,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11012,7 +11008,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11024,7 +11020,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11036,7 +11032,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11048,7 +11044,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11060,7 +11056,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11072,7 +11068,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11084,7 +11080,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11096,7 +11092,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11180,7 +11176,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11204,7 +11200,7 @@
       "kota": "KAB. BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11216,7 +11212,7 @@
       "kota": "KAB. BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11228,7 +11224,7 @@
       "kota": "KAB. KARAWANG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11240,7 +11236,7 @@
       "kota": "KAB. BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11252,7 +11248,7 @@
       "kota": "KAB. BEKASI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11264,7 +11260,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11276,7 +11272,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11288,7 +11284,7 @@
       "kota": "Kota Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11324,7 +11320,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11336,7 +11332,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11348,7 +11344,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11360,7 +11356,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11372,7 +11368,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11384,7 +11380,7 @@
       "kota": "Kota Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11396,7 +11392,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11468,7 +11464,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11480,7 +11476,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11492,7 +11488,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11504,7 +11500,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11516,7 +11512,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11528,7 +11524,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11540,7 +11536,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11552,7 +11548,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11564,7 +11560,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11576,7 +11572,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11588,7 +11584,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11600,7 +11596,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11612,7 +11608,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11624,7 +11620,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11636,7 +11632,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11648,7 +11644,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11660,7 +11656,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11672,7 +11668,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11684,7 +11680,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11696,7 +11692,7 @@
       "kota": "Kota Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11708,7 +11704,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11720,7 +11716,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11732,7 +11728,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11744,7 +11740,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -11756,7 +11752,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11792,7 +11788,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "TDT"
@@ -11888,7 +11884,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11900,7 +11896,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Star",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11912,7 +11908,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11924,7 +11920,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11936,7 +11932,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11948,7 +11944,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11960,7 +11956,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11972,7 +11968,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11984,7 +11980,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -11996,7 +11992,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12008,7 +12004,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12020,7 +12016,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12032,7 +12028,7 @@
       "kota": "Bandung",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12056,7 +12052,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12068,7 +12064,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12080,7 +12076,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12092,7 +12088,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12104,7 +12100,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12116,7 +12112,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12128,7 +12124,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -12392,7 +12388,7 @@
       "kota": "KAB. KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12464,7 +12460,7 @@
       "kota": "KAB. KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13052,7 +13048,7 @@
       "kota": "",
       "province": "DKI Jakarta",
       "topology": "0",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13148,7 +13144,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Terminasi Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -13280,7 +13276,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13292,7 +13288,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13304,7 +13300,7 @@
       "kota": "KAB. KUNINGAN",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13316,7 +13312,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13328,7 +13324,7 @@
       "kota": "Indramayu",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13340,7 +13336,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13352,7 +13348,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13364,7 +13360,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13376,7 +13372,7 @@
       "kota": "Indramayu",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13388,7 +13384,7 @@
       "kota": "Kuningan",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13400,7 +13396,7 @@
       "kota": "Kuningan",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13412,7 +13408,7 @@
       "kota": "KUNINGAN",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13424,7 +13420,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13436,7 +13432,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13448,7 +13444,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13460,7 +13456,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13472,7 +13468,7 @@
       "kota": "KAB. INDRAMAYU",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13484,7 +13480,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13496,7 +13492,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13508,7 +13504,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13520,7 +13516,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13532,7 +13528,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13544,7 +13540,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13556,7 +13552,7 @@
       "kota": "KOTA SUKABUMI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13568,7 +13564,7 @@
       "kota": "SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13580,7 +13576,7 @@
       "kota": "KOTA CIMAHI",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13592,7 +13588,7 @@
       "kota": "KAB. JOMBANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13604,7 +13600,7 @@
       "kota": "KAB. JOMBANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13616,7 +13612,7 @@
       "kota": "KAB. JOMBANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13628,7 +13624,7 @@
       "kota": "KAB. JOMBANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Ccsi Takeout",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": ""
@@ -13784,7 +13780,7 @@
       "kota": "KAB. JEMBER",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hotma"
@@ -13964,7 +13960,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -13976,7 +13972,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14084,7 +14080,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14096,7 +14092,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14108,7 +14104,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14120,7 +14116,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14132,7 +14128,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14144,7 +14140,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14156,7 +14152,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14168,7 +14164,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14180,7 +14176,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14192,7 +14188,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14204,7 +14200,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14216,7 +14212,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14228,7 +14224,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14240,7 +14236,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14252,7 +14248,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14264,7 +14260,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14276,7 +14272,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14288,7 +14284,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14300,7 +14296,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14312,7 +14308,7 @@
       "kota": "KOTA BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "CAO"
@@ -14528,7 +14524,7 @@
       "kota": "KAB. BANDUNG",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -14594,6 +14590,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-06T02:57:55.098Z",
+  "updatedAt": "2026-11-06T10:24:13.391Z",
   "total": 1207
 }
