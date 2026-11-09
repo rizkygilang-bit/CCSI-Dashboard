@@ -2,15 +2,15 @@
   "status": [
     {
       "label": "RFS",
-      "value": 391
+      "value": 390
     },
     {
       "label": "Drop",
-      "value": 364
+      "value": 369
     },
     {
       "label": "Permit",
-      "value": 160
+      "value": 156
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 84
+      "value": 85
     },
     {
       "label": "Pulling Cable",
@@ -26,7 +26,7 @@
     },
     {
       "label": "DRM",
-      "value": 39
+      "value": 38
     }
   ],
   "priority": [
@@ -47,7 +47,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 64
+        "value": 63
       }
     ],
     "pulling cable": [],
@@ -58,18 +58,18 @@
       },
       {
         "label": "P3",
-        "value": 29
+        "value": 30
       }
     ]
   },
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 569
+      "value": 578
     },
     {
       "label": "Permit NY Start",
-      "value": 219
+      "value": 215
     },
     {
       "label": "Site Drop",
@@ -77,7 +77,7 @@
     },
     {
       "label": "Permit Ongoing (Permit Lingkungan)",
-      "value": 146
+      "value": 141
     },
     {
       "label": "Permit Start",
@@ -5620,7 +5620,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "RFS",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ERICK"
@@ -9450,7 +9450,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9462,7 +9462,7 @@
       "topology": "Ring",
       "progressFO": "Pulling Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9954,7 +9954,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9966,7 +9966,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9978,7 +9978,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -9990,7 +9990,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10014,7 +10014,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10026,7 +10026,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit Ongoing (Permit Lingkungan)",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10038,7 +10038,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
     },
     {
@@ -10252,7 +10252,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "TANG-TRI"
@@ -13816,7 +13816,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -13900,7 +13900,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -13912,7 +13912,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -14548,7 +14548,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "DRM",
+      "progressFO": "Drop",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -14590,6 +14590,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-09T02:50:10.801Z",
+  "updatedAt": "2026-11-09T10:39:08.461Z",
   "total": 1207
 }
