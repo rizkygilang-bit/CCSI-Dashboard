@@ -6,11 +6,11 @@
     },
     {
       "label": "Drop",
-      "value": 368
+      "value": 365
     },
     {
       "label": "Permit",
-      "value": 190
+      "value": 191
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 89
+      "value": 91
     },
     {
       "label": "Pulling Cable",
@@ -43,7 +43,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 62
+        "value": 64
       }
     ],
     "pulling cable": [],
@@ -54,7 +54,7 @@
       },
       {
         "label": "P3",
-        "value": 34
+        "value": 35
       }
     ]
   },
@@ -840,7 +840,7 @@
       "kota": "Kota Depok",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "ERICK"
@@ -1440,7 +1440,7 @@
       "kota": "KAB. SIDOARJO",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-DTE"
@@ -10164,7 +10164,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": ""
@@ -10188,7 +10188,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": ""
@@ -10200,7 +10200,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Drop",
+      "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": ""
@@ -14586,6 +14586,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-11T05:24:52.641Z",
+  "updatedAt": "2026-11-11T12:51:16.586Z",
   "total": 1207
 }
