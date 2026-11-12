@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "RFS",
-      "value": 390
+      "value": 410
     },
     {
       "label": "Drop",
@@ -14,7 +14,7 @@
     },
     {
       "label": "Terminasi Done",
-      "value": 166
+      "value": 146
     },
     {
       "label": "Pulling Done",
@@ -61,11 +61,11 @@
   "permit": [
     {
       "label": "Permit Lingkungan done",
-      "value": 578
+      "value": 580
     },
     {
       "label": "Permit NY Start",
-      "value": 215
+      "value": 214
     },
     {
       "label": "Site Drop",
@@ -77,7 +77,7 @@
     },
     {
       "label": "Permit Start",
-      "value": 37
+      "value": 36
     },
     {
       "label": "Community rejected",
@@ -672,7 +672,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -1236,7 +1236,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -2691,7 +2691,7 @@
       "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
-      "rpm": "ACI"
+      "rpm": "ERICK"
     },
     {
       "siteId": "1647832003",
@@ -3276,7 +3276,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -3468,7 +3468,7 @@
       "kota": "Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -4251,7 +4251,7 @@
       "progressFO": "Permit",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
-      "rpm": ""
+      "rpm": "ACI"
     },
     {
       "siteId": "160189104",
@@ -5640,7 +5640,7 @@
       "kota": "KAB. MADIUN",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -5894,7 +5894,7 @@
       "topology": "Ring",
       "progressFO": "Permit",
       "custPrio": "",
-      "permitStatus": "Permit Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
     },
     {
@@ -6840,7 +6840,7 @@
       "kota": "Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -6936,7 +6936,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -6984,7 +6984,7 @@
       "kota": "Kota Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -7080,7 +7080,7 @@
       "kota": "Kota Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -7116,7 +7116,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -7224,7 +7224,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "HAMZAH"
@@ -10167,7 +10167,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "JAW-WJV-0201-X-P",
@@ -10191,7 +10191,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "JAW-WJV-0261-T-B",
@@ -10203,7 +10203,7 @@
       "progressFO": "Permit",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
-      "rpm": ""
+      "rpm": "TANG-TRI"
     },
     {
       "siteId": "1262101003",
@@ -12204,7 +12204,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
@@ -12216,7 +12216,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Permit NY Start",
       "rpm": "HAMZAH"
@@ -12660,7 +12660,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -12684,7 +12684,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12708,7 +12708,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12756,7 +12756,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -12888,7 +12888,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Community rejected",
       "rpm": "HAMZAH"
@@ -12951,7 +12951,7 @@
       "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
-      "rpm": "ACI"
+      "rpm": "ERICK"
     },
     {
       "siteId": "SDA-07-012",
@@ -12984,7 +12984,7 @@
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -13142,7 +13142,7 @@
       "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "P3",
-      "permitStatus": "Permit NY Start",
+      "permitStatus": "Permit Lingkungan done",
       "rpm": "PDS"
     },
     {
@@ -13944,7 +13944,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -14586,6 +14586,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-12T01:45:05.364Z",
+  "updatedAt": "2026-11-12T08:51:48.301Z",
   "total": 1207
 }
