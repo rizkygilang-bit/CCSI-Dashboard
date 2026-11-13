@@ -10,7 +10,7 @@
     },
     {
       "label": "Permit",
-      "value": 191
+      "value": 187
     },
     {
       "label": "Terminasi Done",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 91
+      "value": 95
     },
     {
       "label": "Pulling Cable",
@@ -12432,7 +12432,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "HAMZAH"
@@ -12444,7 +12444,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "HAMZAH"
@@ -13872,7 +13872,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -13884,7 +13884,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit Start",
       "rpm": "Hamzah"
@@ -14586,6 +14586,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-13T03:03:11.568Z",
+  "updatedAt": "2026-11-13T10:52:28.714Z",
   "total": 1207
 }
