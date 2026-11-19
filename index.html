@@ -67,6 +67,15 @@
   .toast.err { border-color:#dc2626; background:#fef2f2; color:#b91c1c; }
   .toast.info { border-color:#2563eb; background:#eff6ff; color:#1d4ed8; }
 
+  .priority-list { margin-top:10px; max-height:240px; overflow-y:auto; font-size:11px; }
+  .priority-list .row { display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid #f1f5f9; }
+  .priority-list .row:last-child { border-bottom:none; }
+  .priority-list .name { font-weight:700; color:#1a202c; }
+  .priority-list .sub { font-size:9px; color:#718096; margin-top:1px; }
+  .priority-list .badge { font-weight:800; color:#2563eb; font-size:11px; padding:2px 8px; background:#eff6ff; border-radius:6px; }
+
+  select.btn { width:100%; padding:8px; font-size:11px; }
+
   @media (min-width: 600px) {
     body { padding:18px; }
     .header h1 { font-size:22px; }
@@ -138,8 +147,15 @@
 
 <div class="secondary-grid">
   <div class="card">
-    <h3>⭐ Site Priority</h3>
+    <h3>⭐ Site Priority (Google Sheets)</h3>
     <div class="chart-wrap medium"><canvas id="priorityChart"></canvas></div>
+    <div class="legend" id="priorityLegend"></div>
+    <div style="margin-top:10px;">
+      <select id="priorityFilter" class="btn">
+        <option value="">-- Semua Priority --</option>
+      </select>
+    </div>
+    <div id="prioritySiteList" class="priority-list"></div>
   </div>
   <div class="card">
     <h3>📋 Permit Status</h3>
@@ -162,9 +178,19 @@ Chart.defaults.responsive = true;
 Chart.defaults.maintainAspectRatio = false;
 Chart.defaults.animation.duration = 500;
 
+/* ============================================================
+   KONFIGURASI
+   ============================================================ */
 const DATA_JSON_URL = "data.json";
 
-let currentData = { status: [], priority: [], permit: [] };
+// ⚠️ GANTI dengan URL publish Google Sheets (format CSV) Anda
+const SHEET_PRIORITY_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-XXXX/pub?gid=YYYY&single=true&output=csv";
+
+/* ============================================================
+   STATE
+   ============================================================ */
+let currentData = { status: [], priority: [], permit: [], sites: [] };
+let prioritySheetData = [];
 let dataSource = 'default';
 
 const COLORS = ['#2563eb','#16a34a','#ea580c','#9333ea','#0891b2','#db2777','#ca8a04','#0284c7'];
@@ -172,6 +198,9 @@ const COLORS = ['#2563eb','#16a34a','#ea580c','#9333ea','#0891b2','#db2777','#ca
 document.getElementById('dateNow').textContent =
   new Date().toLocaleDateString('id-ID',{day:'2-digit',month:'short',year:'numeric'}).toUpperCase();
 
+/* ============================================================
+   TOAST
+   ============================================================ */
 let toastTimer;
 function showToast(msg, type='info'){
   const t = document.getElementById('toast');
@@ -182,6 +211,9 @@ function showToast(msg, type='info'){
   console.log(`[TOAST ${type.toUpperCase()}]`, msg);
 }
 
+/* ============================================================
+   UTIL
+   ============================================================ */
 function waitForCanvasSize(canvasEl, maxAttempts = 20){
   return new Promise((resolve) => {
     let attempts = 0;
@@ -211,6 +243,95 @@ function destroyCharts(){
   charts = [];
 }
 
+/* ============================================================
+   CSV PARSER (mendukung quote)
+   ============================================================ */
+function parseCSV(text){
+  const rows = [];
+  let row = [], cur = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++){
+    const c = text[i], next = text[i+1];
+    if (inQuotes){
+      if (c === '"' && next === '"'){ cur += '"'; i++; }
+      else if (c === '"'){ inQuotes = false; }
+      else { cur += c; }
+    } else {
+      if (c === '"'){ inQuotes = true; }
+      else if (c === ','){ row.push(cur); cur = ''; }
+      else if (c === '\n'){ row.push(cur); rows.push(row); row = []; cur = ''; }
+      else if (c === '\r'){ /* skip */ }
+      else { cur += c; }
+    }
+  }
+  if (cur !== '' || row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+
+/* ============================================================
+   LOAD PRIORITY DARI GOOGLE SHEETS
+   ============================================================ */
+async function loadPriorityFromSheet(){
+  if (!SHEET_PRIORITY_CSV_URL || SHEET_PRIORITY_CSV_URL.includes('XXXX')){
+    console.warn('[SHEET] URL belum diisi. Skip.');
+    return [];
+  }
+  try {
+    const res = await fetch(SHEET_PRIORITY_CSV_URL + '&t=' + Date.now());
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    const rows = parseCSV(text);
+    if (rows.length < 2){
+      console.warn('[SHEET] Baris kurang dari 2.');
+      return [];
+    }
+
+    const header = rows[0].map(h => h.trim().toLowerCase());
+    const idx = (name) => header.indexOf(name);
+
+    // 🔧 SESUAIKAN NAMA KOLOM DENGAN HEADER SPREADSHEET ANDA
+    const cSiteId   = idx('siteid')    !== -1 ? idx('siteid')    : idx('site id');
+    const cSiteName = idx('sitename')  !== -1 ? idx('sitename')  : idx('site name');
+    const cPriority = idx('custprio')  !== -1 ? idx('custprio')
+                    : idx('priority')  !== -1 ? idx('priority')
+                    : idx('prioritas') !== -1 ? idx('prioritas')
+                    : idx('cust prio') !== -1 ? idx('cust prio') : -1;
+    const cKota     = idx('kota')      !== -1 ? idx('kota')      : idx('city');
+    const cRpm      = idx('rpm')       !== -1 ? idx('rpm')       : idx('pic');
+    const cVendor   = idx('ranvendor') !== -1 ? idx('ranvendor') : idx('vendor');
+
+    if (cPriority === -1){
+      console.warn('[SHEET] Kolom priority tidak ditemukan. Header:', header);
+      showToast('⚠️ Kolom priority tidak ditemukan di sheet', 'err');
+      return [];
+    }
+
+    const out = [];
+    for (let i = 1; i < rows.length; i++){
+      const r = rows[i];
+      if (!r || r.every(v => !v)) continue;
+      const priority = (r[cPriority] || '').trim().toUpperCase();
+      if (!priority) continue;
+      out.push({
+        siteId:    cSiteId   !== -1 ? (r[cSiteId]   || '').trim() : '',
+        siteName:  cSiteName !== -1 ? (r[cSiteName] || '').trim() : '',
+        priority,
+        kota:      cKota     !== -1 ? (r[cKota]     || '').trim() : '',
+        rpm:       cRpm      !== -1 ? (r[cRpm]      || '').trim() : '',
+        ranVendor: cVendor   !== -1 ? (r[cVendor]   || '').trim() : ''
+      });
+    }
+    console.log(`[SHEET] ${out.length} site priority dimuat. Header:`, header);
+    return out;
+  } catch (err){
+    console.error('[SHEET] Gagal load:', err);
+    showToast('⚠️ Gagal load sheet Site Priority', 'err');
+    return [];
+  }
+}
+
+/* ============================================================
+   RENDER DASHBOARD (dari data.json)
+   ============================================================ */
 async function renderDashboard(){
   destroyCharts();
 
@@ -264,6 +385,9 @@ async function renderDashboard(){
   await renderCharts(statusWithPct, TOTAL);
 }
 
+/* ============================================================
+   RENDER CHARTS (donut, bar, focus, permit)
+   ============================================================ */
 async function renderCharts(statusWithPct, TOTAL){
   const donutEl = document.getElementById('donutChart');
   if(donutEl){
@@ -318,21 +442,6 @@ async function renderCharts(statusWithPct, TOTAL){
       <div class="val">${f.v.toLocaleString('id-ID')}</div>
     </div>`).join('');
 
-  const priorityEl = document.getElementById('priorityChart');
-  if(priorityEl && currentData.priority && currentData.priority.length){
-    await waitForCanvasSize(priorityEl);
-    try {
-      charts.push(new Chart(priorityEl, {
-        type:'doughnut',
-        data:{ labels: currentData.priority.map(d=>d.label),
-          datasets:[{ data: currentData.priority.map(d=>d.value),
-            backgroundColor: ['#16a34a','#2563eb','#ea580c','#9333ea','#db2777'], borderWidth:3, borderColor:'#fff' }] },
-        options:{ cutout:'60%', responsive:true, maintainAspectRatio:false,
-          plugins:{ legend:{ position:'bottom', labels:{ color:'#4a5568', font:{size:10, weight:'600'}, padding:10, usePointStyle:true, boxWidth:8 } } } }
-      }));
-    } catch(e){ console.error('Priority:', e); }
-  }
-
   const permitEl = document.getElementById('permitChart');
   if(permitEl && currentData.permit && currentData.permit.length){
     await waitForCanvasSize(permitEl);
@@ -351,6 +460,81 @@ async function renderCharts(statusWithPct, TOTAL){
   }
 }
 
+/* ============================================================
+   RENDER SITE PRIORITY (dari Google Sheets)
+   ============================================================ */
+function renderPriorityFromSheet(sites){
+  prioritySheetData = sites || [];
+  const legendEl = document.getElementById('priorityLegend');
+  const listEl   = document.getElementById('prioritySiteList');
+  const filterEl = document.getElementById('priorityFilter');
+
+  const counts = {};
+  prioritySheetData.forEach(s => { counts[s.priority] = (counts[s.priority]||0)+1; });
+  const labels = Object.keys(counts).sort();
+  const values = labels.map(l => counts[l]);
+  const colors = ['#16a34a','#2563eb','#ea580c','#9333ea','#db2777','#0891b2'];
+
+  if (!labels.length){
+    if (legendEl) legendEl.innerHTML = '<div style="color:#718096;font-size:10px;">Tidak ada data priority dari sheet.</div>';
+    if (listEl)   listEl.innerHTML = '';
+    if (filterEl) filterEl.innerHTML = '<option value="">-- Semua Priority --</option>';
+    return;
+  }
+
+  // Legend
+  if (legendEl){
+    legendEl.innerHTML = labels.map((l,i)=>`
+      <div>
+        <span><span class="dot" style="background:${colors[i%colors.length]}"></span>${l}</span>
+        <span class="val">${counts[l]} sites</span>
+      </div>`).join('');
+  }
+
+  // Chart
+  const el = document.getElementById('priorityChart');
+  if (el){
+    const old = charts.find(c => c.canvas && c.canvas.id === 'priorityChart');
+    if (old){ try{ old.destroy(); }catch(e){} charts = charts.filter(c=>c!==old); }
+    charts.push(new Chart(el, {
+      type:'doughnut',
+      data:{ labels, datasets:[{ data: values, backgroundColor: colors, borderWidth:3, borderColor:'#fff' }] },
+      options:{ cutout:'60%', responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{ display:false },
+          tooltip:{ callbacks:{ label: ctx => `${ctx.label}: ${ctx.parsed} sites` } } } }
+    }));
+  }
+
+  // Filter dropdown
+  if (filterEl){
+    filterEl.innerHTML = '<option value="">-- Semua Priority --</option>' +
+      labels.map(l => `<option value="${l}">${l} (${counts[l]})</option>`).join('');
+    filterEl.onchange = () => renderPriorityList(filterEl.value);
+  }
+  renderPriorityList('');
+}
+
+function renderPriorityList(filter){
+  const listEl = document.getElementById('prioritySiteList');
+  if (!listEl) return;
+  const rows = prioritySheetData.filter(s => !filter || s.priority === filter);
+  if (!rows.length){
+    listEl.innerHTML = '<div style="color:#718096;font-size:10px;">Tidak ada site.</div>';
+    return;
+  }
+  listEl.innerHTML = rows.map(s=>`
+    <div class="row">
+      <div>
+        <div class="name">${s.siteName || s.siteId || '-'}</div>
+        <div class="sub">${s.siteId || ''} · ${s.kota || '-'} · ${s.rpm || '-'}</div>
+      </div>
+      <div class="badge">${s.priority}</div>
+    </div>`).join('');
+}
+
+/* ============================================================
+   RESIZE
+   ============================================================ */
 let resizeTimer;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
@@ -360,6 +544,9 @@ window.addEventListener('orientationchange', () => {
   setTimeout(() => charts.forEach(c => { try { c.resize(); } catch(e){} }), 400);
 });
 
+/* ============================================================
+   LOAD DATA
+   ============================================================ */
 async function loadData(){
   const btn = document.getElementById('btnUpdate');
   btn.disabled = true;
@@ -374,14 +561,15 @@ async function loadData(){
   try {
     const response = await fetch(DATA_JSON_URL + '?t=' + Date.now());
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
-    
+
     const data = await response.json();
     if(!data.status || data.status.length === 0) throw new Error('data.json kosong');
 
     currentData = {
       status: data.status,
       priority: data.priority || [],
-      permit: data.permit || []
+      permit: data.permit || [],
+      sites: data.sites || []
     };
     dataSource = 'sheets';
     await renderDashboard();
@@ -389,6 +577,11 @@ async function loadData(){
     const total = data.total || data.status.reduce((s,d)=>s+d.value,0);
     const updatedAt = data.updatedAt ? new Date(data.updatedAt).toLocaleString('id-ID') : '';
     showToast(`✅ Berhasil! Total ${total.toLocaleString('id-ID')} sites. Update: ${updatedAt}`, 'ok');
+
+    // ===== LOAD SITE PRIORITY DARI GOOGLE SHEETS =====
+    showToast('⏳ Mengambil Site Priority dari Google Sheets...', 'info');
+    const sheetSites = await loadPriorityFromSheet();
+    renderPriorityFromSheet(sheetSites);
 
   } catch(err){
     console.error('Error:', err);
@@ -401,11 +594,17 @@ async function loadData(){
   }
 }
 
+/* ============================================================
+   DOWNLOAD CSV
+   ============================================================ */
 function downloadData(){
   let csv = 'Kategori,Label,Value\n';
   currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
   currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
   if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
+  if(prioritySheetData.length){
+    prioritySheetData.forEach(d => csv += `SitePriority,${d.siteName||d.siteId},${d.priority}\n`);
+  }
   const blob = new Blob([csv], { type:'text/csv' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -416,10 +615,4 @@ function downloadData(){
   showToast('📥 Downloaded!', 'info');
 }
 
-window.addEventListener('load', async () => {
-  await new Promise(r => setTimeout(r, 300));
-  await loadData();
-});
-</script>
-</body>
-</html>
+/* =================================
