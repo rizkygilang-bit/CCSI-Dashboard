@@ -195,8 +195,8 @@ Chart.defaults.animation.duration = 500;
 // ============================================================
 const DATA_JSON_URL = "data.json";
 
-// 🚨 GANTI LINK DI BAWAH INI DENGAN LINK CSV HASIL "PUBLISH TO WEB" SPREADSHEET ANDA 🚨
-const SHEET_PRIORITY_CSV_URL = "URL_CSV_ANDA_DISINI"; 
+// 🚨 MASUKKAN LINK CSV HASIL "PUBLISH TO WEB" DARI TAB "SITE PRIORITY" DI SINI 🚨
+const SHEET_PRIORITY_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsM2W-ixiIhBq4PTUfpbiY3DFzeMTDaHmxUvMfUDCn16d3s4NOLemY4JAbcA6FmgjdoUgGJy_7N-er/pub?gid=1105140279&single=true&output=csv"; 
 
 let currentData = { status: [], priority: [], permit: [], sites: [] };
 let prioritySheetData = [];
@@ -238,7 +238,7 @@ function waitForCanvasSize(canvasEl, maxAttempts = 20){
 }
 
 function destroyCharts(){
-  charts.forEach(c => { try { c.destroy(); } catch(e){} });
+  charts.forEach(c => { try { c.destroy(); }catch(e){} });
   charts = [];
 }
 
@@ -267,12 +267,11 @@ function parseCSV(text){
 }
 
 // ============================================================
-// LOAD PRIORITY DARI GOOGLE SHEETS (SUDAH DISESUAIKAN DENGAN SHEET ANDA)
+// LOAD PRIORITY DARI GOOGLE SHEETS
 // ============================================================
 async function loadPriorityFromSheet(){
   if (!SHEET_PRIORITY_CSV_URL || !SHEET_PRIORITY_CSV_URL.startsWith("http")) {
-    console.warn('[SHEET] URL belum diisi atau tidak valid.');
-    showToast('⚠️ URL CSV Sheet belum diisi di kode', 'err');
+    console.warn('[SHEET] URL belum diisi.');
     return [];
   }
   
@@ -283,20 +282,24 @@ async function loadPriorityFromSheet(){
     const rows = parseCSV(text);
     if (rows.length < 2) return [];
 
-    // Ambil baris pertama sebagai header dan ubah ke lowercase
     const header = rows[0].map(h => h.trim().toLowerCase());
     const idx = (name) => header.indexOf(name);
 
-    // 🔧 PENYESUAIAN NAMA KOLOM BERDASARKAN SCREENSHOT ANDA
+    // 🔧 MENCARI NAMA KOLOM YANG TEPAT
     const cSiteId   = idx('site id') !== -1 ? idx('site id') : idx('siteid');
     const cSiteName = idx('site name') !== -1 ? idx('site name') : idx('sitename');
-    const cPriority = idx('site priority') !== -1 ? idx('site priority') : idx('priority');
+    
+    // Cari 'site priority', jika tidak ada cari 'flagging priority'
+    const cPriority = idx('site priority') !== -1 ? idx('site priority') 
+                    : idx('flagging priority') !== -1 ? idx('flagging priority')
+                    : idx('priority') !== -1 ? idx('priority') : -1;
+                    
     const cKota     = idx('kota') !== -1 ? idx('kota') : idx('city');
     const cRpm      = idx('remark') !== -1 ? idx('remark') : idx('rpm');
     const cVendor   = idx('ran vendor') !== -1 ? idx('ran vendor') : idx('ranvendor');
 
     if (cPriority === -1){
-      console.warn('[SHEET] Kolom "Site Priority" tidak ditemukan. Header:', header);
+      console.warn('[SHEET] Kolom priority tidak ditemukan. Header:', header);
       showToast('⚠️ Kolom priority tidak ditemukan di sheet', 'err');
       return [];
     }
@@ -304,12 +307,11 @@ async function loadPriorityFromSheet(){
     const out = [];
     for (let i = 1; i < rows.length; i++){
       const r = rows[i];
-      if (!r || r.every(v => !v)) continue; // Skip baris kosong
+      if (!r || r.every(v => !v)) continue; 
       
       let priority = (r[cPriority] || '').trim().toUpperCase();
       
-      // Abaikan baris jika isinya kosong atau cuma teks header
-      if (!priority || priority === 'SITE PRIORITY' || priority === 'PRIORITY') continue;
+      if (!priority || priority === 'SITE PRIORITY' || priority === 'FLAGGING PRIORITY' || priority === 'PRIORITY') continue;
       
       out.push({
         siteId:    cSiteId   !== -1 ? (r[cSiteId]   || '').trim() : '',
@@ -580,38 +582,4 @@ async function loadData(){
     console.error('Error:', err);
     showToast(`❌ Gagal: ${err.message}`, 'err');
     badge.className = 'status-badge err';
-    badge.textContent = '❌ Gagal load data.json';
-  } finally {
-    btn.disabled = false;
-    btn.textContent = '🔄 Refresh';
-  }
-}
-
-function downloadData(){
-  let csv = 'Kategori,Label,Value\n';
-  currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
-  currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
-  if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
-  if(prioritySheetData.length){
-    prioritySheetData.forEach(d => csv += `SitePriority,${d.siteName||d.siteId},${d.priority}\n`);
-  }
-  const blob = new Blob([csv], { type:'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'ccsi-data-' + new Date().toISOString().slice(0,10) + '.csv';
-  a.click();
-  URL.revokeObjectURL(url);
-  showToast('📥 Downloaded!', 'info');
-}
-
-// ============================================================
-// INIT
-// ============================================================
-window.addEventListener('load', async () => {
-  await new Promise(r => setTimeout(r, 300));
-  await loadData();
-});
-</script>
-</body>
-</html>
+    badge.textContent
