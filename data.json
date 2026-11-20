@@ -2,23 +2,23 @@
   "status": [
     {
       "label": "RFS",
-      "value": 412
+      "value": 415
     },
     {
       "label": "Drop",
-      "value": 372
+      "value": 373
     },
     {
       "label": "Permit",
-      "value": 168
+      "value": 166
     },
     {
       "label": "Terminasi Done",
-      "value": 150
+      "value": 149
     },
     {
       "label": "Pulling Done",
-      "value": 110
+      "value": 108
     },
     {
       "label": "Pulling Cable",
@@ -26,7 +26,7 @@
     },
     {
       "label": "DRM",
-      "value": 37
+      "value": 38
     }
   ],
   "priority": [
@@ -47,7 +47,7 @@
     "permit": [
       {
         "label": "P3",
-        "value": 47
+        "value": 46
       }
     ],
     "pulling cable": [],
@@ -5812,7 +5812,7 @@
       "kota": "KAB. BANDUNG BARAT",
       "province": "JAWA BARAT",
       "topology": "Chain",
-      "progressFO": "Permit",
+      "progressFO": "Pulling Done",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
       "rpm": "PDS"
@@ -7024,7 +7024,7 @@
       "kota": "Kota Malang",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Terminasi Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "HAMZAH"
@@ -7228,7 +7228,7 @@
       "kota": "KOTA MALANG",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "RFS",
+      "progressFO": "DRM",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -7648,7 +7648,7 @@
       "kota": "KOTA SURABAYA",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Permit",
+      "progressFO": "Drop",
       "custPrio": "P3",
       "permitStatus": "Permit Ongoing (Permit Lingkungan)",
       "rpm": "TANG-DTE"
@@ -12436,7 +12436,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "HAMZAH"
@@ -12448,7 +12448,7 @@
       "kota": "KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "HAMZAH"
@@ -13024,7 +13024,7 @@
       "kota": "KAB. KEDIRI",
       "province": "JAWA TIMUR",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Site Drop",
       "rpm": "HAMZAH"
@@ -14647,7 +14647,7 @@
       "progressFO": "DRM",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
-      "rpm": "Hotma"
+      "rpm": "ERICK"
     },
     {
       "siteId": "KCP Bangil 67153",
@@ -15142,6 +15142,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-20T08:29:56.209Z",
+  "updatedAt": "2026-11-20T17:09:32.708Z",
   "total": 1253
 }
