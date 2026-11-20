@@ -2,7 +2,7 @@
   "status": [
     {
       "label": "RFS",
-      "value": 411
+      "value": 412
     },
     {
       "label": "Drop",
@@ -18,7 +18,7 @@
     },
     {
       "label": "Pulling Done",
-      "value": 111
+      "value": 110
     },
     {
       "label": "Pulling Cable",
@@ -58,7 +58,7 @@
       },
       {
         "label": "P3",
-        "value": 41
+        "value": 40
       }
     ]
   },
@@ -2751,7 +2751,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KOTA PASURUAN",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -3267,7 +3267,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Star",
       "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -4347,7 +4347,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "star",
       "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -4359,7 +4359,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KAB. MALANG",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Ring",
       "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -5211,7 +5211,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KOTA PASURUAN",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Chain",
       "progressFO": "RFS",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -5223,7 +5223,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KOTA PASURUAN",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Ring",
       "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -5247,7 +5247,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KOTA PASURUAN",
       "province": "JAWA TIMUR",
-      "topology": "",
+      "topology": "Chain",
       "progressFO": "Terminasi Done",
       "custPrio": "",
       "permitStatus": "Permit Lingkungan done",
@@ -9724,7 +9724,7 @@
       "kota": "KOTA DEPOK",
       "province": "JAWA BARAT",
       "topology": "Ring",
-      "progressFO": "Pulling Done",
+      "progressFO": "RFS",
       "custPrio": "P3",
       "permitStatus": "Permit Lingkungan done",
       "rpm": "ORANGE"
@@ -14967,7 +14967,7 @@
       "ranVendor": "HUAWEI",
       "kota": "KAB. CIREBON",
       "province": "JAWA BARAT",
-      "topology": "",
+      "topology": "Star",
       "progressFO": "DRM",
       "custPrio": "",
       "permitStatus": "Permit NY Start",
@@ -15142,6 +15142,6 @@
       "rpm": "ERICK"
     }
   ],
-  "updatedAt": "2026-11-20T07:23:53.847Z",
+  "updatedAt": "2026-11-20T07:56:06.330Z",
   "total": 1253
 }
