@@ -195,9 +195,8 @@ Chart.defaults.animation.duration = 500;
 // ============================================================
 const DATA_JSON_URL = "data.json";
 
-// ⚠️ GANTI URL DI BAWAH DENGAN LINK CSV SPREADSHEET ANDA ⚠️
-// Contoh: "https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?gid=123&single=true&output=csv"
-const SHEET_PRIORITY_CSV_URL = ""; 
+// 🚨 GANTI LINK DI BAWAH INI DENGAN LINK CSV HASIL "PUBLISH TO WEB" SPREADSHEET ANDA 🚨
+const SHEET_PRIORITY_CSV_URL = "URL_CSV_ANDA_DISINI"; 
 
 let currentData = { status: [], priority: [], permit: [], sites: [] };
 let prioritySheetData = [];
@@ -268,13 +267,15 @@ function parseCSV(text){
 }
 
 // ============================================================
-// LOAD PRIORITY DARI GOOGLE SHEETS
+// LOAD PRIORITY DARI GOOGLE SHEETS (SUDAH DISESUAIKAN DENGAN SHEET ANDA)
 // ============================================================
 async function loadPriorityFromSheet(){
   if (!SHEET_PRIORITY_CSV_URL || !SHEET_PRIORITY_CSV_URL.startsWith("http")) {
     console.warn('[SHEET] URL belum diisi atau tidak valid.');
+    showToast('⚠️ URL CSV Sheet belum diisi di kode', 'err');
     return [];
   }
+  
   try {
     const res = await fetch(SHEET_PRIORITY_CSV_URL + '&t=' + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -282,22 +283,20 @@ async function loadPriorityFromSheet(){
     const rows = parseCSV(text);
     if (rows.length < 2) return [];
 
+    // Ambil baris pertama sebagai header dan ubah ke lowercase
     const header = rows[0].map(h => h.trim().toLowerCase());
     const idx = (name) => header.indexOf(name);
 
-    // Sesuaikan nama kolom jika berbeda
-    const cSiteId   = idx('siteid')    !== -1 ? idx('siteid')    : idx('site id');
-    const cSiteName = idx('sitename')  !== -1 ? idx('sitename')  : idx('site name');
-    const cPriority = idx('custprio')  !== -1 ? idx('custprio')
-                    : idx('priority')  !== -1 ? idx('priority')
-                    : idx('prioritas') !== -1 ? idx('prioritas')
-                    : idx('cust prio') !== -1 ? idx('cust prio') : -1;
-    const cKota     = idx('kota')      !== -1 ? idx('kota')      : idx('city');
-    const cRpm      = idx('rpm')       !== -1 ? idx('rpm')       : idx('pic');
-    const cVendor   = idx('ranvendor') !== -1 ? idx('ranvendor') : idx('vendor');
+    // 🔧 PENYESUAIAN NAMA KOLOM BERDASARKAN SCREENSHOT ANDA
+    const cSiteId   = idx('site id') !== -1 ? idx('site id') : idx('siteid');
+    const cSiteName = idx('site name') !== -1 ? idx('site name') : idx('sitename');
+    const cPriority = idx('site priority') !== -1 ? idx('site priority') : idx('priority');
+    const cKota     = idx('kota') !== -1 ? idx('kota') : idx('city');
+    const cRpm      = idx('remark') !== -1 ? idx('remark') : idx('rpm');
+    const cVendor   = idx('ran vendor') !== -1 ? idx('ran vendor') : idx('ranvendor');
 
     if (cPriority === -1){
-      console.warn('[SHEET] Kolom priority tidak ditemukan. Header:', header);
+      console.warn('[SHEET] Kolom "Site Priority" tidak ditemukan. Header:', header);
       showToast('⚠️ Kolom priority tidak ditemukan di sheet', 'err');
       return [];
     }
@@ -305,19 +304,23 @@ async function loadPriorityFromSheet(){
     const out = [];
     for (let i = 1; i < rows.length; i++){
       const r = rows[i];
-      if (!r || r.every(v => !v)) continue;
-      const priority = (r[cPriority] || '').trim().toUpperCase();
-      if (!priority) continue;
+      if (!r || r.every(v => !v)) continue; // Skip baris kosong
+      
+      let priority = (r[cPriority] || '').trim().toUpperCase();
+      
+      // Abaikan baris jika isinya kosong atau cuma teks header
+      if (!priority || priority === 'SITE PRIORITY' || priority === 'PRIORITY') continue;
+      
       out.push({
         siteId:    cSiteId   !== -1 ? (r[cSiteId]   || '').trim() : '',
         siteName:  cSiteName !== -1 ? (r[cSiteName] || '').trim() : '',
-        priority,
+        priority:  priority,
         kota:      cKota     !== -1 ? (r[cKota]     || '').trim() : '',
         rpm:       cRpm      !== -1 ? (r[cRpm]      || '').trim() : '',
         ranVendor: cVendor   !== -1 ? (r[cVendor]   || '').trim() : ''
       });
     }
-    console.log(`[SHEET] ${out.length} site priority dimuat.`);
+    console.log(`[SHEET] ${out.length} site priority berhasil dimuat.`);
     return out;
   } catch (err){
     console.error('[SHEET] Gagal load:', err);
@@ -327,7 +330,7 @@ async function loadPriorityFromSheet(){
 }
 
 // ============================================================
-// RENDER DASHBOARD UTAMA
+// RENDER DASHBOARD UTAMA (DARI DATA.JSON)
 // ============================================================
 async function renderDashboard(){
   destroyCharts();
@@ -376,7 +379,7 @@ async function renderDashboard(){
     </div>`;
   }).join('');
 
-  await new Promise(r => setTimeout(r, 50)); // kecil jeda render
+  await new Promise(r => setTimeout(r, 50)); 
   await renderCharts(statusWithPct, TOTAL);
 }
 
@@ -565,12 +568,12 @@ async function loadData(){
     showToast('✅ Berhasil load data.json', 'ok');
 
     // === LOAD PRIORITY DARI SHEETS ===
-    if (SHEET_PRIORITY_CSV_URL) {
+    if (SHEET_PRIORITY_CSV_URL && SHEET_PRIORITY_CSV_URL !== "URL_CSV_ANDA_DISINI") {
       showToast('⏳ Mengambil Site Priority...', 'info');
       const sheetSites = await loadPriorityFromSheet();
       renderPriorityFromSheet(sheetSites);
     } else {
-      renderPriorityFromSheet([]); // Jika url kosong, munculkan pesan kosong
+      renderPriorityFromSheet([]); 
     }
 
   } catch(err){
