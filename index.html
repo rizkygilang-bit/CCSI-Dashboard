@@ -181,8 +181,11 @@ window.onerror = function(msg, url, line) {
     badge.className = 'status-badge err';
     badge.textContent = '❌ JS Error: Cek Console';
   }
-  document.getElementById('btnUpdate').disabled = false;
-  document.getElementById('btnUpdate').textContent = '🔄 Refresh';
+  const btn = document.getElementById('btnUpdate');
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = '🔄 Refresh';
+  }
 };
 
 Chart.defaults.devicePixelRatio = window.devicePixelRatio || 2;
@@ -195,7 +198,7 @@ Chart.defaults.animation.duration = 500;
 // ============================================================
 const DATA_JSON_URL = "data.json";
 
-// 🚨 MASUKKAN LINK CSV HASIL "PUBLISH TO WEB" DARI TAB "SITE PRIORITY" DI SINI 🚨
+// Link CSV Google Sheets Anda
 const SHEET_PRIORITY_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsM2W-ixiIhBq4PTUfpbiY3DFzeMTDaHmxUvMfUDCn16d3s4NOLemY4JAbcA6FmgjdoUgGJy_7N-er/pub?gid=1105140279&single=true&output=csv"; 
 
 let currentData = { status: [], priority: [], permit: [], sites: [] };
@@ -285,11 +288,11 @@ async function loadPriorityFromSheet(){
     const header = rows[0].map(h => h.trim().toLowerCase());
     const idx = (name) => header.indexOf(name);
 
-    // 🔧 MENCARI NAMA KOLOM YANG TEPAT
+    // Mencari nama kolom yang sesuai dengan spreadsheet Anda
     const cSiteId   = idx('site id') !== -1 ? idx('site id') : idx('siteid');
     const cSiteName = idx('site name') !== -1 ? idx('site name') : idx('sitename');
     
-    // Cari 'site priority', jika tidak ada cari 'flagging priority'
+    // Mendukung nama 'Site Priority', 'Flagging Priority', atau 'Priority'
     const cPriority = idx('site priority') !== -1 ? idx('site priority') 
                     : idx('flagging priority') !== -1 ? idx('flagging priority')
                     : idx('priority') !== -1 ? idx('priority') : -1;
@@ -539,7 +542,7 @@ window.addEventListener('resize', () => {
 });
 
 // ============================================================
-// LOAD DATA UTAMA
+// LOAD DATA UTAMA & SHEETS
 // ============================================================
 async function loadData(){
   const btn = document.getElementById('btnUpdate');
@@ -553,6 +556,7 @@ async function loadData(){
   showToast('⏳ Mengambil data.json...', 'info');
 
   try {
+    // 1. Ambil data utama (data.json)
     const response = await fetch(DATA_JSON_URL + '?t=' + Date.now());
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
     
@@ -569,8 +573,8 @@ async function loadData(){
     await renderDashboard();
     showToast('✅ Berhasil load data.json', 'ok');
 
-    // === LOAD PRIORITY DARI SHEETS ===
-    if (SHEET_PRIORITY_CSV_URL && SHEET_PRIORITY_CSV_URL !== "URL_CSV_ANDA_DISINI") {
+    // 2. Ambil data Site Priority dari Google Sheets
+    if (SHEET_PRIORITY_CSV_URL && SHEET_PRIORITY_CSV_URL.startsWith("http")) {
       showToast('⏳ Mengambil Site Priority...', 'info');
       const sheetSites = await loadPriorityFromSheet();
       renderPriorityFromSheet(sheetSites);
@@ -582,4 +586,41 @@ async function loadData(){
     console.error('Error:', err);
     showToast(`❌ Gagal: ${err.message}`, 'err');
     badge.className = 'status-badge err';
-    badge.textContent
+    badge.textContent = '❌ Gagal load data.json';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🔄 Refresh';
+  }
+}
+
+// ============================================================
+// DOWNLOAD CSV
+// ============================================================
+function downloadData(){
+  let csv = 'Kategori,Label,Value\n';
+  currentData.status.forEach(d => csv += `Status,${d.label},${d.value}\n`);
+  currentData.priority.forEach(d => csv += `Priority,${d.label},${d.value}\n`);
+  if(currentData.permit) currentData.permit.forEach(d => csv += `Permit,${d.label},${d.value}\n`);
+  if(prioritySheetData.length){
+    prioritySheetData.forEach(d => csv += `SitePriority,${d.siteName||d.siteId},${d.priority}\n`);
+  }
+  const blob = new Blob([csv], { type:'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'ccsi-data-' + new Date().toISOString().slice(0,10) + '.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('📥 Downloaded!', 'info');
+}
+
+// ============================================================
+// INIT
+// ============================================================
+window.addEventListener('load', async () => {
+  await new Promise(r => setTimeout(r, 300));
+  await loadData();
+});
+</script>
+</body>
+</html>
